@@ -1,0 +1,31 @@
+{
+  "Module" : "InterestOnly",
+  "Data" : {
+    "LoanDate" : "2022-08-22",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "4.500",
+    "Proceeds" : "10000.00",
+    "Term" : "12",
+    "Fees" : [
+      {
+        "Name" : "Financed Prepaid 1",
+        "AddToFinChg" : true,
+        "AddToPrin" : true,
+        "CalcType" : "Dollar",
+        "Entry" : "25.25",
+        "IsLoanCost" : true
+      },
+      {
+        "Name" : "Financed Fee 2",
+        "AddToFinChg" : false,
+        "AddToPrin" : true,
+        "CalcType" : "Dollar",
+        "Entry" : "74.75",
+        "IsLoanCost" : false
+      }
+    ],
+    "Settings" : {
+      "TILARESPA2015" : true
+    }
+  }
+}

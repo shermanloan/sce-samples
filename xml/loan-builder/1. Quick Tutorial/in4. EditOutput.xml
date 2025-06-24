@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Edit Output 
+  Various aspects of the output can be customized to provide new and different information.
+  This sample adds two features - 
+    o Disclose the APR to four decimal places
+    o Show "Grand Totals" for the Amortization Schedule
+    o Show Subtotals for the Amortization Schedule
+    o Add a "Type" attribute to the amortization table, indicating the naturee of the element.
+  -->
+  <EditOutput
+    ShowType="true"
+    ShowGrandTot="true"
+    ShowSubTot="true"
+    APRDec="4" />
+  
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="10.000" AccrualCode="320" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+</inLOAN_BUILDER>
+
+<!-- NOTES
+
+For a full description of all ways to edit the presentation of the output,
+please refer to the manual.
+
+-->

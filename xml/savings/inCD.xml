@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inCD SYSTEM "inCD.dtd">
+<inCD>
+
+   <!-- Basic Input -->
+   <DepositDate>2019-01-01</DepositDate>
+   <PresentValue>5000.00</PresentValue>
+   <FutureValue></FutureValue>
+   <IntRate>5.25</IntRate>
+   <Term Units="years">1</Term>
+
+</inCD>

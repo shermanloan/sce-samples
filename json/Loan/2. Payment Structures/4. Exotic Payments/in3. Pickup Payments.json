@@ -1,0 +1,34 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "20000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "// " : "Pickup Payments - Suppose someone wanted to add $1,000 to each", 
+    "//_" : "December payment. These types of payments are referred to as ",
+    "//-" : "'pickup payments'. One replaces the desired payments with the new",
+    "//!" : "payment definition. Since the default payment type is 'CalcPmt'",
+    "//|" : "the following PmtStream definition defines December payments as", 
+    "//*" : "the calculated payment plus the specified 'Amount'.",
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "24"
+      },
+      {
+        "Date": "0000-12-00",
+        "Amount": "1000.00"
+      }
+    ]
+  }
+}

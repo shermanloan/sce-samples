@@ -1,0 +1,21 @@
+{
+  "Module" : "Irregular",
+  "Data" : {
+    "LoanDate" : "2022-08-25",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "5.500",
+    "Proceeds" : "10000.00",
+    "Term" : "24",
+    "IrregType" : "Irregular",
+    "IrregPmts" : [
+      {
+        "Month" : "12",
+        "Year" : "0",
+        "Payment" : "1000.00"
+      }
+    ],
+    "Settings" : {
+      "AccrualCode" : "302"
+    }
+  }
+}

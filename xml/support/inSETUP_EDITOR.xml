@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE inSETUP_EDITOR SYSTEM "inSETUP_EDITOR.dtd" >
+<inSETUP_EDITOR Account="#" DataDirPath="data_path_here" Cmd="create|retrieve|update" ShowAll="true|false">
+
+    <LS>
+        <RegZAPR Method="default|actuarial|usrule|eu|ca" Accuracy="default|1|2|3|4|5" Min="" Max="" />
+        <Construction Active="default|true|false" Method="default|simple|laserpro" Accrual="default|unitperiod|actual360|actual365" />
+        <Insurance Type="default|singlepremium|standardmob|truemob" EscrowTrueMob="default|true|false" TrueMobDay="#" />
+        <Accrual InstallmentCode="default|100|101|201|202|203|204|..." LastDay="default|true|false" OddFinal="default|true|false" SinglePayCode="default|210|220|230" PmtRounding="default|nearest|down|up|best" />
+    </LS>
+
+    <CL>
+        <Basic>
+            <AllowOnEqual Value="default|true|false" />
+            <AllowOnBalloon Value="default|true|false" />
+            <AllowOnSinglePay Value="default|true|false" />
+            <AllowOnIntOnly Value="default|true|false" />
+            <AllowOnPrinPlus Value="default|true|false" />
+            <AllowOnIrregular Value="default|true|false" />
+            <AllowOnARM Value="default|true|false" />
+            <AllowOnOpenEnd Value="default|true|false" />
+            <SinglePremiumMethods Gross="default|true|false" Net="default|true|false" Level="default|true|false" />
+            <InceptionAgeCap Value="#" CheckedOn="default|loandate|1stpmtdate" />
+        </Basic>
+        <Gross>
+            <Caps AgeBanded="default|true|false" TermBanded="default|true|false">
+                <Aggregate Value="#" IfExceeded="default|drop|partial" />
+                <Term Value="#" IfExceeded="default|drop|truncate" />
+                <TerminationAge Value="#" IfExceeded="default|drop|nextnearest|nearest|prevnearest" />
+                <AgeBand MaxAge="#" Aggregate="#" Term="#" />...
+                <TermBand MaxTerm="#" Aggregate="#" />...
+            </Caps>
+            <Formula>
+                <GrossBalloon CoverNDecr="default|true|false" DecrBeforeLevel="default|true|false" />
+                <GrossOddDays Method="default|none|15-16|360|365" />
+                <GrossDiscount Value="#" Montana="default|true|false" LevelOnBalloon="default|true|false" />
+                <GrossNonmonthly AllowLess="default|true|false" AllowGreater="default|true|false" CoverGreaterLevel="default|true|false" Rule1516="default|true|false" Texas="default|true|false" />
+                <GrossIntOnly DecrOnIntOnly="default|true|false" />
+            </Formula>
+            <Rates UseTable="default|true|false">
+                <Set1 Single="#" Joint="#" ExpressedAs="default|sp|mob" />
+                <RateTable ClearAll="true|false">
+                    <TermRate Term="#" Single="#" Joint="#" />...
+                </RateTable>
+            </Rates>
+        </Gross>
+        <Net>
+            <Caps AgeBanded="default|true|false" TermBanded="default|true|false">
+                <Aggregate Value="#" IfExceeded="default|drop|partial" />
+                <Term Value="#" IfExceeded="default|drop|truncate" />
+                <TerminationAge Value="#" IfExceeded="default|drop|nextnearest|nearest|prevnearest" />
+                <AgeBand MaxAge="#" Aggregate="#" Term="#" />...
+                <TermBand MaxTerm="#" Aggregate="#" />...
+            </Caps>
+            <Formula>
+                <NetMethod Value="default|actuarial|discounted|straightline" />
+                <NetOddDays Method="default|none|15-16|360|365" AdjustPremium="default|true|false" />
+                <NetOddDaysInterest Method="default|none|360|365|monumental|asg|fbs|cso" />
+                <NetDiscount Value="#" />
+                <NetDelinquency Value="#" AddToCoverage="default|true|false" />
+                <NetExtraPayments Value="#" Minnesota="default|true|false" />
+                <NetBalloon Method="default|alldecreasing|levelonballoon|anico" />
+                <NetSinglePay Method="default|levelonpmt|levelonprin|decreasing" />
+                <NetNonmonthly AllowLess="default|true|false" AllowGreater="default|true|false" 1516Rule="default|true|false" Texas="default|true|false" />
+                <NetIntOnly LevelOnBalance="default|true|false" />
+                <NetCapping LevelAtCap="default|true|false" />
+            </Formula>
+            <Rates UseTable="default|true|false">
+                <Set1 Single="#" Joint="#" ExpressedAs="default|sp|mob" />
+                <RateTable ClearAll="true|false">
+                    <TermRate Term="#" Single="#" Joint="#" />...
+                </RateTable>
+            </Rates>
+        </Net>
+        <Level>
+            <Caps AgeBanded="default|true|false" TermBanded="default|true|false">
+                <Aggregate Value="#" />
+                <Term Value="#" />
+                <AgeBand MaxAge="#" Aggregate="#" Term="#" />...
+                <TermBand MaxTerm="#" Aggregate="#" />...
+            </Caps>
+            <Formula>
+                <LevelDiscount Value="#" />
+                <LevelSinglePay TermInDays="default|true|false" />
+                <LevelCapping Separate="default|true|false" />
+            </Formula>
+            <Rates UseTable="default|true|false">
+                <Set1 Single="#" Joint="#" ExpressedAs="default|sp|mob" />
+                <RateTable ClearAll="true|false">
+                    <TermRate Term="#" Single="#" Joint="#" />...
+                </RateTable>
+            </Rates>
+        </Level>
+        <Mob>
+            <Caps AgeBanded="default|true|false" TermBanded="default|true|false">
+                <Aggregate Value="#" IfExceeded="default|drop|level|ratio" />
+                <Term Value="#" IfExceeded="default|drop|truncate" />
+                <TerminationAge Value="#" IfExceeded="default|drop|nextnearest|nearest|prevnearest" />
+                <AgeBand MaxAge="#" Aggregate="#" Term="#" />...
+                <TermBand MaxTerm="#" Aggregate="#" />...
+            </Caps>
+            <Formula>
+                <MobMethod ActualDayAccrual="default|blended|unitperiod" UpDivisor="default|360|365" WeeklyDivisor="default|52|365div7" />
+                <MobNonmonthly AllowLess="default|true|false" AllowGreater="default|true|false" />
+            </Formula>
+            <Rates UseTable="default|true|false">
+                <Set1 Single="#" Joint="#" ExpressedAs="default|sp|mob" />
+                <RateTable ClearAll="true|false">
+                    <TermRate Term="#" Single="#" Joint="#" />...
+                </RateTable>
+            </Rates>
+        </Mob>
+        <TrueMob>
+            <Caps>
+                <Aggregate Value="#" IfExceeded="default|drop|partial" />
+                <Term Value="#" IfExceeded="default|drop|truncate" />
+                <TerminationAge Value="#" IfExceeded="default|nextnearest" />
+            </Caps>
+            <Formula>
+                <TrueMobTruncation JointAgeTruncation="default|jointtonone|jointtosingletonone" />
+            </Formula>
+            <Rates>
+                <Set1 Single="#" Joint="#" ExpressedAs="default|mob" />
+            </Rates>
+        </TrueMob>
+    </CL>
+
+    <AH>
+        <Basic>
+            <AhAllow Value="default|none|single|joint" WithoutCl="default|true|false" JointWithoutJointCl="default|true|false" UseRateTable="default|true|false" />
+            <AhBalloon GrossCoverage="default|nless1|n|none" NetCoverage="default|nless1|n|none" />
+            <AllowOnIntOnly Value="default|true|false" />
+            <AllowOnPrinPlus Value="default|true|false" />
+            <AhIrregular Value="default|none|minimum|average|computed|trueaverage" />
+            <AllowOnARM Value="default|true|false" />
+            <AllowOnOpenEnd Value="default|true|false" />
+            <AhNonmonthly AllowLess="default|true|false" AllowGreater="default|true|false" />
+            <InceptionAgeCap Value="#" CheckedOn="default|loandate|1stpmtdate" />
+        </Basic>
+        <Caps AgeBanded="default|true|false" AhTermBanded="default|false|covterm|loanterm">
+            <Aggregate Value="#" IfExceeded="default|drop|partial|level|ratio" />
+            <Benefit Value="#" IfExceeded="default|drop|partial|level|ratio" />
+            <Term Value="#" IfExceeded="default|drop|truncate" />
+            <TerminationAge Value="#" IfExceeded="default|drop|nextnearest|nearest|prevnearest" />
+            <AgeBand MaxAge="#" Aggregate="#" Benefit="#" Term="#" />...
+            <TermBand MaxTerm="#" Aggregate="#" Benefit="#" />...
+        </Caps>
+        <Formula>
+            <AhMob Method="default|net|gross|benefit" ActualDayAccrual="default|blended|unitperiod" UpDivisor="default|360|365" WeeklyDivisor="default|52|365div7" />
+            <AhDeviation DPs="#" Rounding="default|nearest|down|up" />
+            <AhJoint Method="enteredrates|multiplier" DPs="#" Rounding="default|nearest|down|up" />
+        </Formula>
+        <AhSets NumSets="#">
+            <AhSet Index="#" Title="">
+                <DeviationFactor Value="#" />
+                <JointMult Value="#" />
+                <AhRate Single="#" Joint="#" />
+                <RateTable ClearAll="true|false">
+                    <TermRate Term="#" Single="#" Joint="#" />
+                </RateTable>
+            </AhSet>
+        </AhSets>
+    </AH>
+
+    <IU>
+    </IU>
+
+    <PP>
+    </PP>
+</inSETUP_EDITOR>

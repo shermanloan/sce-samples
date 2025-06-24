@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <ActuarialTweaks SinglePayFraction="InMonths" />
+
+  <!-- The Advance -->
+  <Advance Date="1978-07-15" AmtFin="1000" />
+
+  <!-- The Payment -->
+  <PmtStream Begin="1979-01-15" Pmt="1044" />
+
+</inREGZ_APR>

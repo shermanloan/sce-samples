@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE outLEASE SYSTEM "outLEASE.dtd">
+<outLEASE>
+   <Results>
+      <Description>Successful Calculation</Description>
+      <XMLDetail>XML Input is well formed</XMLDetail>
+      <XMLDetail>XML Input is Valid.</XMLDetail>
+      <XMLDetail>XML Output is untested</XMLDetail>
+   </Results>
+   <FCLA LeaseDate="2019-01-01">
+      <Delivery>420.61</Delivery>
+      <Payment>420.61</Payment>
+      <OtherChg>0.00</OtherChg>
+      <TotPmts Term="36">15141.96</TotPmts>
+   </FCLA>
+   <Delivery_Items>
+      <CapCostReduction CashDown="0.00" Trade="0.00" Payoff="0.00">0.00</CapCostReduction>
+      <Payment>420.61</Payment>
+      <Delivery>420.61</Delivery>
+   </Delivery_Items>
+   <Payment_Items>
+      <Depreciation Per_Month="293.06" Total="10550.00"/>
+      <RentCharge Rate="0.00" AccrualCode="Money_Factor" Per_Month="97.19" Total="3498.84"/>
+      <BasePmt>390.25</BasePmt>
+      <Fee Name="Pmt Tax" Tax="true" Entry="7.78" AddTo="Payment" Formula="OnBasePmt" RoundUnit="0.01" Rounding="Nearest" >30.36</Fee>
+      <Payment>420.61</Payment>
+   </Payment_Items>
+   <OtherChg_Items>
+      <OtherChg>9450.00</OtherChg>
+   </OtherChg_Items>
+   <CapCost_Items>
+      <Price>20000.00</Price>
+      <Protection PerPmt="0.00" PerDay="0.00">0.00</Protection>
+      <GrossCapCost>20000.00</GrossCapCost>
+      <CapCostReduction CashDown="0.00" Trade="0.00" Payoff="0.00">0.00</CapCostReduction>
+      <CapCost>20000.00</CapCost>
+   </CapCost_Items>
+   <Residual_Items>
+      <MSRP>21000.00</MSRP>
+      <AdjMSRP>21000.00</AdjMSRP>
+      <BaseResidual Percent="45.00">9450.00</BaseResidual>
+      <Excess_Miles AntMo="0" StdMo="0" Miles="0" Cents="0">0.00</Excess_Miles>
+      <Residual>9450.00</Residual>
+   </Residual_Items>
+   <Purchase_Items>
+      <Residual>9450.00</Residual>
+      <PurchasePrice>9450.00</PurchasePrice>
+   </Purchase_Items>
+   <ProtectionInfo Product="Disability" Formula="SinglePremium" RateType="Fixed">
+      <CalcResult>Valid Calculation</CalcResult>
+      <Cost Premium="0.00" PerPmt="0.00" PerDay="0.00" Factor="0.000"/>
+      <Coverage Amount="15141.96" Note="Full Coverage"/>
+      <Benefit Amount="420.61" Note="Full Coverage"/>
+      <CovTerm InMonths="36" InPmts="36" Maturity="2022-01-01" Note="Full Coverage"/>
+   </ProtectionInfo>
+</outLEASE>

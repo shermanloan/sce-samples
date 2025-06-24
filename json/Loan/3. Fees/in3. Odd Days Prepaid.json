@@ -1,0 +1,42 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "// " : "Odd Days Prepaid (ODI or Odd Days Interest)",
+    "//_" : "ODI is a special fee that represents the additional interest", 
+    "//-" : "beyond one unit period to the first payment.",
+    "//!" : "The first element to understand is how the odd days are computed.",
+    "//|" : "A common way is to start at the payment date, move backward one",
+    "//*" : "unit period then calculate the actual number of days between that",
+    "//@" : "date (we call the 'anchor date') and the date interest begins accruing.",
+    "//~" : "Mortgages often require the odd days interest to disclose a 'daily rate'.",
+    "//#" : "See the Accrual Codes in the manual for more information on these codes.",
+    "ODI": {
+      "AnchorDate": "BackUnitPeriod",
+      "AccrualCode": "220",
+      "UseDailyCost": true
+    },
+    "EditOutput": {
+      "ShowType": true,
+      "ShowFees": false
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-16",
+        "Term": "12"
+      }
+    ]
+  }
+}

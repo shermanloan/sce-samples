@@ -1,0 +1,36 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "20000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000"
+      }
+    ],
+    "// " : "Christmas Bonuses - suppose December payments are three thousand", 
+    "//_" : "and five thousand dollars. Then specific YYYY-MM-00 combinations", 
+    "//-" : "are established for those specific month & years.",
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "24"
+      },
+      {
+        "Date": "2019-12-00",
+        "PmtType": "FixedPmt",
+        "Amount": "3000.00"
+      },
+      {
+        "Date": "2020-12-00",
+        "PmtType": "FixedPmt",
+        "Amount": "5000.00"
+      }
+    ]
+  }
+}

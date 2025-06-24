@@ -1,0 +1,29 @@
+<inLOAN_BUILDER>
+<!-- Fixed Rate Mortgage with PMI Insurance -->
+
+  <!-- Basic Input -->
+  <EditInterest Date="2025-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance      Date="2025-01-01" Amount="240000.00" />
+  <PmtStream   Begin="2025-02-01" Term="360" />
+
+  <!-- Mortgage Insurance -->
+  <Mortgage_Insurance
+    LoanAmt="240000"
+    PropertyValue="250000">
+
+      <!-- Rate Expressed as a $/$100/Year -->
+      <MI_Rate>0.35</MI_Rate>
+
+      <!-- Periodic (monthly) Premiums with 
+           warning at 80% LTV (Balance / Property Value)
+           dropping coverate at 78% LTV
+      -->
+      <Periodic>360</Periodic>
+
+      <!-- 3 Monthly premiums paid at closing, not financed -->
+      <UpFront Paid="AtClosing" Units="Months">3</UpFront> 
+
+   </Mortgage_Insurance>
+   
+</inLOAN_BUILDER>
+

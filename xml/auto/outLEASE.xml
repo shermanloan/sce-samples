@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE outLEASE SYSTEM "outLEASE.dtd">
+<outLEASE>
+   <Results>
+      <Description>Successful Calculation</Description>
+      <XMLDetail>XML Input is well formed</XMLDetail>
+      <XMLDetail>XML not valid: [Error] : Element contains another element which does not match the content model -- nodeName: inLEASE</XMLDetail>
+      <XMLDetail>XML Input is invalid.</XMLDetail>
+      <XMLDetail>XML Output is untested</XMLDetail>
+   </Results>
+   <FCLA LeaseDate="2019-01-01">
+      <Delivery>439.70</Delivery>
+      <Payment>439.70</Payment>
+      <OtherChg>0.00</OtherChg>
+      <TotPmts Term="36">15829.20</TotPmts>
+   </FCLA>
+   <Delivery_Items>
+      <CapCostReduction CashDown="0.00" Trade="0.00" Payoff="0.00">0.00</CapCostReduction>
+      <Payment>439.70</Payment>
+      <Delivery>439.70</Delivery>
+   </Delivery_Items>
+   <Payment_Items>
+      <Depreciation Per_Month="308.89" Total="11119.87"/>
+      <RentCharge Rate="0.00" AccrualCode="Money_Factor" Per_Month="99.07" Total="3566.52"/>
+      <BasePmt>407.96</BasePmt>
+      <Fee Name="Pmt Tax" Tax="true" Entry="7.78" AddTo="Payment" Formula="OnBasePmt" RoundUnit="0.01" Rounding="Nearest" >31.74</Fee>
+      <Payment>439.70</Payment>
+   </Payment_Items>
+   <OtherChg_Items>
+      <OtherChg>9450.00</OtherChg>
+   </OtherChg_Items>
+   <CapCost_Items>
+      <Price>20000.00</Price>
+      <Protection PerPmt="18.57" PerDay="0.61">569.87</Protection>
+      <GrossCapCost>20569.87</GrossCapCost>
+      <CapCostReduction CashDown="0.00" Trade="0.00" Payoff="0.00">0.00</CapCostReduction>
+      <CapCost>20569.87</CapCost>
+   </CapCost_Items>
+   <Residual_Items>
+      <MSRP>21000.00</MSRP>
+      <AdjMSRP>21000.00</AdjMSRP>
+      <BaseResidual Percent="45.00">9450.00</BaseResidual>
+      <Excess_Miles AntMo="0" StdMo="0" Miles="0" Cents="0">0.00</Excess_Miles>
+      <Residual>9450.00</Residual>
+   </Residual_Items>
+   <Purchase_Items>
+      <Residual>9450.00</Residual>
+      <PurchasePrice>9450.00</PurchasePrice>
+   </Purchase_Items>
+   <ProtectionInfo Product="Life" Formula="gmBalloonStandard" RateType="Fixed">
+      <CalcResult>Valid Calculation</CalcResult>
+      <Cost Premium="144.62" PerPmt="4.71" PerDay="0.15" Factor="0.470"/>
+      <Coverage Amount="10550.00" Note="Partial Coverage of $10,550"/>
+      <CovTerm InMonths="35" InPmts="35" Maturity="2021-12-01" Note="Full Coverage"/>
+   </ProtectionInfo>
+   <ProtectionInfo Product="Level" Formula="gmBalloonStandard" RateType="Fixed">
+      <CalcResult>Valid Calculation</CalcResult>
+      <Cost Premium="425.25" PerPmt="13.86" PerDay="0.46" Factor="1.500"/>
+      <Coverage Amount="9450.00" Note="Full Coverage"/>
+      <CovTerm InMonths="36" InPmts="36" Maturity="2022-01-01" Note="Full Coverage"/>
+   </ProtectionInfo>
+</outLEASE>

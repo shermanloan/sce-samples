@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inSINGLE_PAYMENT SYSTEM "inSINGLE_PAYMENT.dtd">
+<inSINGLE_PAYMENT>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-04-01</PmtDate>
+   <IntRate>10</IntRate>
+   <Proceeds>10000.00</Proceeds>
+   
+</inSINGLE_PAYMENT>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inBALLOON_SPECIFY_REGULAR SYSTEM "inBALLOON_SPECIFY_REGULAR.dtd">
+<inBALLOON_SPECIFY_REGULAR>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <IntRate>10</IntRate>
+   <Proceeds>10000.00</Proceeds>
+   <Term>36</Term>
+   
+    <!-- The regularly scheduled payment -->
+   <RegPmt>132.17</RegPmt>
+   
+</inBALLOON_SPECIFY_REGULAR>

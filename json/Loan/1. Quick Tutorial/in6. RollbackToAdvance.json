@@ -1,0 +1,28 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "// " : "To compute the advance, set the Compute field to true.",
+        "//_" : "Set PmtType to 'FixedPmt' when computing the advance.",
+        "Date": "2019-01-01",
+        "Compute": true
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "PmtType": "FixedPmt",
+        "Amount": "400.00",
+        "Term": "12"
+      }
+    ]
+  }
+}

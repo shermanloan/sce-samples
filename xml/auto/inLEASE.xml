@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inLEASE SYSTEM "inLEASE.dtd">
+<inLEASE>
+
+   <!-- Basic Input -->
+   <LeaseDate>2019-01-01</LeaseDate>
+   <Price>20000.00</Price>
+   <Term>36</Term>
+   <RentCharge Rate="0.0033" AccrualCode="Money_Factor"	/>
+
+   <!-- Residual Value Elements -->
+   <MSRP>21000.00</MSRP>
+   <Residual ResidFormat="Percent">45</Residual>
+
+   <!-- Payment Fees and Taxes -->
+   <Fee Name="Pmt Tax" Tax="true" Entry="7.78" AddTo="Payment" Formula="OnBasePmt" />
+
+   <Protection>
+
+      <Life/>
+      <Disability/>
+      <Birthday1>1980-01-01</Birthday1>
+      <Birthday2>1980-01-01</Birthday2>
+
+   </Protection>
+
+</inLEASE>

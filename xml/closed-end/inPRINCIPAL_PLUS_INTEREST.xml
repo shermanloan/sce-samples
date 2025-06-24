@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inPRINCIPAL_PLUS_INTEREST SYSTEM "inPRINCIPAL_PLUS_INTEREST.dtd">
+<inPRINCIPAL_PLUS_INTEREST>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <IntRate>10</IntRate>
+   <Proceeds>10000.00</Proceeds>
+   
+   <!-- Principal Reduction (Enter "0" for PrincipalReduction to compute the PrinReduction) -->
+   <FirstPrincipalPmt>9</FirstPrincipalPmt>
+   <PrincipalReduction>100</PrincipalReduction>
+   <PrincipalPmts>24</PrincipalPmts>
+   
+</inPRINCIPAL_PLUS_INTEREST>

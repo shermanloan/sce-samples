@@ -1,0 +1,39 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "// " : "Payday Lending - often noted for their high APR's, this sample", 
+    "//_" : "displays the APR to four decimal places of accuracy.",
+    "//-" : "J. L. Sherman and Associates is the industry expert in the", 
+    "//!" : "calculation of Regulation Z APR's.",
+    "APR": {
+      "Decimals": "4"
+    },
+    "Advances": [
+      {
+        "Date": "2019-07-01",
+        "Amount": "300.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-07-01",
+        "IntRate": "29.49",
+        "AccrualCode": "320"
+      }
+    ],
+    "Fees": [
+      {
+        "Amount": "25.00",
+        "AddToPrin": true,
+        "AddToFinChg": true
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-07-15",
+        "Term": "6",
+        "PPY": "24"
+      }
+    ]
+  }
+}

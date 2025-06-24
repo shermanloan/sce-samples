@@ -1,0 +1,63 @@
+<!-- A 10/1 ARM means a teaser term of five years
+     with rates adjusting annually following the
+     teaser term. 
+
+     3/2 Capping means the post teaser rate (initial increase)
+     will be capped at 3%, rather than the normal 2% annual increase.
+-->
+
+<inLOAN_BUILDER>
+
+   <Advance
+      Date="2025-01-01"
+      Amount="300000"/>
+
+   <!-- EditInterest elements are always required with LoanBuilder. 
+        The "IntRate" attribute gets overridden by the Teaser Rate 
+        but all other attributes are kept. The zero rate emphasizes 
+        this point.
+   -->
+   <EditInterest
+      Date="2025-01-01"
+      IntRate="0.000"
+      AccrualCode="304" />
+
+   <!-- The foundation payments, all of which are of type "CalcPmt" by default 
+        The payment amounts will increase when the rate increases, unless the 
+        ARM CalcType is set to "Balloon"
+   -->
+   <PmtStream
+      Begin="2025-02-01"
+      Term="360" />
+
+   <!-- ARM Declaration -->
+   <ARM>
+
+      <!-- Discount term persists for 10 years -->
+      <Teaser 
+         Rate="3.500" 
+         Term="120" />
+
+      <!-- This element focuses on the adjustment to the rate 
+           immediately following the Teaser Term. If the actual rate
+           needs to be specified, not just an increase, use Type="Rate".
+      -->
+      <PostTeaser
+        Type="Increase"
+        Rate="3.0" />
+
+      <!-- Fully Indexed Rate definition -->
+      <FullyIndexedRate 
+         Index="4.0" 
+         Margin="2.75" />
+
+      <!-- Rate Caps that limit volitility -->
+      <Limits 
+         Floor="2.0" 
+         Ceiling="14.0" 
+         Annual="2.0" 
+         Lifetime="5.0" />
+
+   </ARM>
+
+</inLOAN_BUILDER>

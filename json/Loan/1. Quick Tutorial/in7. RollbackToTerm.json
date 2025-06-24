@@ -1,0 +1,32 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "// " : "To compute the term, set the payment to the desired amount",
+        "//_" : "then set the term to the maximum permissible. Finally, set",
+        "//-" : "the ComputeTerm attribute to true. The SCE will automatically",
+        "//!" : "shorten the term of the loan and return the first equal pmt",
+        "//|" : "loan whose payment is less than or equal to the specified pmt.",
+        "Date": "2019-02-01",
+        "PmtType": "FixedPmt",
+        "Amount": "400.00",
+        "Term": "360",
+        "ComputeTerm": true
+      }
+    ]
+  }
+}

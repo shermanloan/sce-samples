@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inHCM SYSTEM "inHCM.dtd">
+<inHCM>
+   <LockInDate>2023-01-01</LockInDate>
+   <Lien Type="first" Rate="fixed" Dwelling="personal_property" />
+   <Term PPY="12">360</Term>
+   <LoanAmount>255102.04</LoanAmount>
+   <AmountFinanced>255102.04</AmountFinanced>
+   <APR>9.91</APR>
+   <FinanceCharge>292688.40</FinanceCharge>
+   <InterestCharge>266366.36</InterestCharge>
+   <FederalStatePremiumsFees>0.00</FederalStatePremiumsFees>
+   <PMI After="20625.00" AtOrBefore="625.00" MaxAllowedAtOrBefore="7653.06" />
+   <ThirdPartyCharges>0.00</ThirdPartyCharges>
+   <DiscountPoints FullRate="6.000" Fee="5102.04">2</DiscountPoints>
+   <LoanOriginatorFees>0.00</LoanOriginatorFees>
+   <RealEstateFees FinanceAmt="0.00">0.00</RealEstateFees>
+   <CreditInsurance FinanceAmt="0.00">0.00</CreditInsurance>
+   <PrepaymentPenalty Max="0" Total="0" FinanceAmt="0"
+       After36Months="false" AmountPrepaid="0" />
+</inHCM>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inOpenEnd SYSTEM "inOpenEnd.dtd" >
+<inOpenEnd>
+
+   <!-- This module is for PERIODIC calculations -->
+   <!-- Use one of the Closed End modules for computing the up front disclosure statement -->
+
+   <!-- Basic Inputs -->
+   <BeginDate>2019-01-01</BeginDate>
+   <TimeToPmt TimeUnits="Months">1</TimeToPmt>
+   <Balance>10000</Balance>
+   <IntRate>10.000</IntRate>
+   <Payment PmtType="IntOnly">0</Payment>
+
+</inOpenEnd>

@@ -1,0 +1,7 @@
+{
+  "Module" : "Ui",
+  "Data" : {
+    "Account" : "1",
+    "DataPath" : "/etc/sce"
+  }
+}

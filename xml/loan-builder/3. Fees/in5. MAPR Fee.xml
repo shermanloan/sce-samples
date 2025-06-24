@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+  <APR 
+    UseMAPR="true" />
+
+    <!-- Show fees explicitly and show the "Type" attribute in the AmTable. -->
+  <EditOutput
+    ShowFees="true"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="Protection" 
+    Amount="75.00" 
+    AddToPrin="true" 
+    AddToFinChg="false"
+    MAPR="true" />
+
+</inLOAN_BUILDER>
+
+
+
+  <!-- MAPR Fee
+    The Military APR includes fees that the Regulation Z APR does not.
+
+    Step 1 is turning on the fees with the "UseMAPR" attribute of "EditOutput"
+    Step 2 is configuring the fee to be an APR affecting fee using "MAPR" in the "Fee" element.
+
+  -->

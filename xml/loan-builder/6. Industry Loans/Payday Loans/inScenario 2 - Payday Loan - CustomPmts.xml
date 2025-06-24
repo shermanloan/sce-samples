@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Output Adjustments -->
+  <APR 
+    Decimals="4" />
+
+  <EditOutput
+    ShowType="true" />
+
+  <!-- ********************************** -->
+  <!-- ********* Payday Lending ********* -->
+  <!-- ********************************** -->
+
+  <!-- Basic Inputs -->
+  <EditInterest Date="2019-07-01" IntRate="29.49" AccrualCode="320" />
+  <Advance Amount="300.00" Date="2019-07-01" />
+  <Fee Amount="25.00" AddToPrin="true" AddToFinChg="true" />
+
+  <!-- Custom Payments -->
+  <PmtStream PmtType="FixedPmt" Amount="50.00" Begin="2019-07-08" />
+  <PmtStream PmtType="FixedPmt" Amount="50.00" Begin="2019-07-16" />
+  <PmtStream PmtType="FixedPmt" Amount="50.00" Begin="2019-07-25" />
+  <PmtStream PmtType="CalcPmt" Begin="2019-08-25" />
+  <PmtStream PmtType="CalcPmt" Begin="2019-08-26" />
+
+</inLOAN_BUILDER>
+
+<!-- Payday Lending - Custom Payments
+
+  Some payday loans have highly timewise-irregular repayment streams.
+  Such custom payments put a special burden on the APR calculation, which
+  may end up with an entirely unexpected unit period. 
+
+  Because Payday lending often is the first in line for regulatory scrutiny,
+  calculation equipment must be very strong in APR calculations, which is 
+  another area were the SCEX and Loan Builder shine.
+
+  This payment stream consists of three fixed payments of fifty dollars, 
+  followed by two computed payments.
+
+  The Unit Period for this highly irregular payment stream must be calculated.
+  To examine the details of this APR, refer to the adjoining sample.
+
+-->

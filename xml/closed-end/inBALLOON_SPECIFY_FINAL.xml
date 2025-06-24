@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inBALLOON_SPECIFY_FINAL SYSTEM "inBALLOON_SPECIFY_FINAL.dtd">
+<inBALLOON_SPECIFY_FINAL>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <IntRate>10</IntRate>
+   <Proceeds>10000.00</Proceeds>
+   <Term>36</Term>
+   
+   <!-- The Balloon Payment -->
+   <FinalPmt>8093.59</FinalPmt>
+   
+</inBALLOON_SPECIFY_FINAL>

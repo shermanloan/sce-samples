@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+
+  <!-- Monthly Interest Only
+     First, establish the full term of the monthly interst paymets.
+  -->
+  <PmtStream
+    PmtType="PayInt" 
+    Begin="2019-02-01" 
+    Term="12" />
+
+  <!-- Quarterly Principal + Final Payoff
+    Quarterly principal payments will be made, beginning on April.
+    The SCEX automatically calculates the final payment to amortize the
+    loan properly.
+  -->
+  <PmtStream
+    PPY="4"
+    PmtType="PayInt" 
+    Begin="2019-04-01" 
+    Amount="100.00"
+    Term="4" />
+ 
+</inLOAN_BUILDER>

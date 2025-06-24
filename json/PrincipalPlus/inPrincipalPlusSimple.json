@@ -1,0 +1,15 @@
+{
+  "Module" : "PrincipalPlus",
+  "Data" : {
+    "LoanDate" : "2022-08-24",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "6.000",
+    "Proceeds" : "10000.00",
+    "FirstPrincipalPmt" : "1",
+    "PrincipalReduction" : "100",
+    "PrincipalPmts" : "12",
+    "Settings" : {
+      "AccrualCode" : "320"
+    }
+  }
+}

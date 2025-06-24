@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="320" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+
+  <!-- Single Payment Note
+
+    Specify the date only that the payment is made in the PmtStream element.
+    A term of one and a "CalcPmt" are both assumed.
+    
+  -->
+
+  <PmtStream 
+    Begin="2020-01-01" />
+
+</inLOAN_BUILDER>

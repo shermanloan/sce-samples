@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Business Rule - Odd Final Payment 
+    To ensure a zero ending balance after amortization, one can request
+    an adjustment to the final payment to achieve that business rule
+  -->
+  <BusinessRules
+    AmError="AdjPmt" />
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <!-- Round Payments
+    Changing how payments are rounded is accomplished in the "EditInterest"
+    element as follows:
+  -->
+  <EditInterest 
+    PmtRound="up"
+    Date="2019-01-01" 
+    IntRate="5.000" 
+    AccrualCode="304"/>
+ 
+</inLOAN_BUILDER>

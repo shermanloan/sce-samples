@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inHPML SYSTEM "inHPML.dtd">
+<inHPML>
+   <Lien Type="first" Jumbo="false"/>
+   <Loan RateType="fixed" />
+   <LockInDate>2023-01-01</LockInDate>
+   <RegZApr>5.500</RegZApr>
+   <TermInYears>30</TermInYears>
+</inHPML>

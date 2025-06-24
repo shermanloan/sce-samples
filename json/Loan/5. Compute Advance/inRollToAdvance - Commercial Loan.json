@@ -1,0 +1,58 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true
+    },
+    "// " : "Roll to Advance: Commercial Loan - this sample assumes three", 
+    "//_" : "advances preceding quarterly payments for ten years. Each year", 
+    "//-" : "has an Interest Only payment, a skipped payment, a pure principal", 
+    "//!" : "payment then a constant fixed payment.",
+    "//|" : "The results of the calculation appear in the Amortization schedule",
+    "//~" : "as objects of 'Type' : 'Advance'.",
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Compute": true
+      },
+      {
+        "Date": "2019-07-01",
+        "Amount": "20000"
+      },
+      {
+        "Date": "2020-01-01",
+        "Amount": "5000",
+        "Compute": true
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2020-03-01",
+        "PmtType": "PayInt",
+        "Term": "10",
+        "PPY": "1"
+      },
+      {
+        "Date": "2020-09-01",
+        "PmtType": "PayPrin",
+        "Amount": "5000.00",
+        "Term": "10",
+        "PPY": "1"
+      },
+      {
+        "Date": "2020-12-01",
+        "PmtType": "FixedPmt",
+        "Amount": "10000.00",
+        "Term": "10",
+        "PPY": "1"
+      }
+    ]
+  }
+}

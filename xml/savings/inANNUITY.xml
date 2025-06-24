@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inANNUITY SYSTEM "inANNUITY.dtd">
+<inANNUITY
+   CalcType="getMonthlyIncome">
+
+   <!-- BasicInput -->
+   <BeginBalance>500000.00</BeginBalance>
+   <IntRate>5.000</IntRate>
+   <MonthlyIncome></MonthlyIncome>
+   <MonthsOfIncome>360</MonthsOfIncome>
+
+</inANNUITY>

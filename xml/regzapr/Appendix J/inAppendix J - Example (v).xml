@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="1978-03-20" 
+    AmtFin="500" />
+
+  <!-- The Payment stream -->
+  <PmtStream 
+    Begin="1978-04-21" 
+    Term="30" 
+    PPY="52"
+    Pmt="17.60" />
+
+</inREGZ_APR>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- TURN ON OUTPUT FEATURES -->
+  <EditOutput
+    ShowType="true"/>
+
+  <!-- ********************************** -->
+  <!-- ********** GRACE PERIOD ********** -->
+  <!-- ********************************** -->
+
+  <!-- Interest accrues on an Actual/Actual Simple basis during Grace Period -->
+  <EditInterest 
+    Date="2017-09-01" 
+    IntRate="3.49"
+    AccrualCode="330" />
+
+  <!-- Make the Advance -->
+  <Advance
+    Amount="6000.00"
+    Date="2017-09-01" />
+
+  <Advance 
+    Amount="8000.00" 
+    Date="2018-01-08" />
+
+  <Advance 
+    Amount="10000.00" 
+    Date="2018-04-08" />
+
+  <!-- ********************************** -->
+  <!-- ******* REPAYMENT PERIOD ********* -->
+  <!-- ********************************** -->
+
+  <!-- Capitalize Interest, then Accrue on a True360/360 basis -->
+  <EditInterest 
+    Date="2019-03-07" 
+    AccrualCode="304"
+    Capitalize="true" />
+
+  <!-- 180 computed payments -->
+  <PmtStream 
+    PmtType="CalcPmt"
+    Begin="2019-04-07" 
+    Term="180" />
+
+</inLOAN_BUILDER>

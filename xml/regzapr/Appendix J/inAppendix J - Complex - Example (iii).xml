@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="1978-04-10" 
+    AmtFin="39688.56" />
+
+  <PmtStream Begin="1978-06-01" Term="12" Pmt="291.81"/>
+  <PmtStream Begin="1979-06-01" Term="12" Pmt="300.18"/>
+  <PmtStream Begin="1980-06-01" Term="12" Pmt="308.78"/>
+  <PmtStream Begin="1981-06-01" Term="12" Pmt="317.61"/>
+  <PmtStream Begin="1982-06-01" Term="12" Pmt="326.65"/>
+  <PmtStream Begin="1983-06-01" Term="12" Pmt="335.92"/>
+  <PmtStream Begin="1984-06-01" Term="12" Pmt="345.42"/>
+  <PmtStream Begin="1985-06-01" Term="12" Pmt="355.15"/>
+  <PmtStream Begin="1986-06-01" Term="12" Pmt="365.12"/>
+  <PmtStream Begin="1987-06-01" Term="12" Pmt="375.33"/>
+
+  <PmtStream Begin="1988-06-01" Term="12" Pmt="385.76"/>
+  <PmtStream Begin="1989-06-01" Term="12" Pmt="385.42"/>
+  <PmtStream Begin="1990-06-01" Term="12" Pmt="385.03"/>
+  <PmtStream Begin="1991-06-01" Term="12" Pmt="384.62"/>
+  <PmtStream Begin="1992-06-01" Term="12" Pmt="384.17"/>
+  <PmtStream Begin="1993-06-01" Term="12" Pmt="383.67"/>
+  <PmtStream Begin="1994-06-01" Term="12" Pmt="383.13"/>
+  <PmtStream Begin="1995-06-01" Term="12" Pmt="382.54"/>
+  <PmtStream Begin="1996-06-01" Term="12" Pmt="381.90"/>
+  <PmtStream Begin="1997-06-01" Term="12" Pmt="381.20"/>
+
+  <PmtStream Begin="1998-06-01" Term="12" Pmt="380.43"/>
+  <PmtStream Begin="1999-06-01" Term="12" Pmt="379.60"/>
+  <PmtStream Begin="2000-06-01" Term="12" Pmt="378.68"/>
+  <PmtStream Begin="2001-06-01" Term="12" Pmt="377.69"/>
+  <PmtStream Begin="2002-06-01" Term="12" Pmt="376.60"/>
+  <PmtStream Begin="2003-06-01" Term="12" Pmt="375.42"/>
+  <PmtStream Begin="2004-06-01" Term="12" Pmt="374.13"/>
+  <PmtStream Begin="2005-06-01" Term="12" Pmt="372.72"/>
+  <PmtStream Begin="2006-06-01" Term="12" Pmt="371.18"/>
+  <PmtStream Begin="2007-06-01" Term="12" Pmt="369.50"/>
+
+</inREGZ_APR>

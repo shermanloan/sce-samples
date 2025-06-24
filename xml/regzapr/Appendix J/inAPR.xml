@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR Method="Actuarial">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="2020-04-21" 
+    AmtFin="146145.00" />
+
+  <!-- The Payment stream -->
+  <PmtStream 
+    Begin="2020-05-01" 
+    Term="239" 
+    Pmt="1043.56" />
+
+  <PmtStream 
+    Begin="2040-04-01" 
+    Term="1" 
+    Pmt="1041.67" />
+
+
+</inREGZ_APR>

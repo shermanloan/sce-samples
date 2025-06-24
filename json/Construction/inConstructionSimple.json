@@ -1,0 +1,16 @@
+{
+  "Module" : "Construction",
+  "Data" : {
+    "LoanDate" : "2022-07-20",
+    "PmtDate" : "2022-12-31",
+    "IntRate" : "5.500",
+    "HalfCommitment" : false,
+    "Proceeds" : "5000.00",
+    "Term" : "36",
+    "PPY" : "12",
+    "Settings" : {
+      "ConMethod" : "Simple",
+      "ConAccrual" : "Actual365"
+    }
+  }
+}

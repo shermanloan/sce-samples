@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="10.000" AccrualCode="320" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+
+  <!-- Balloon: Specify Regular Payment
+
+    Balloons of this type are specified as equal payment loans except that
+    the payment is fixed ("FixedPmt"), not calculated.
+    We then replace the last payment (in this example, payment #12) with a
+    payment type of "CalcPmt".
+
+  -->
+
+  <PmtStream 
+    Begin="2019-02-01" 
+    PmtType="FixedPmt"
+    Amount="50.00"
+    Term="12" />
+
+  <PmtStream 
+    Begin="0012-00-00" 
+    PmtType="CalcPmt" />
+
+</inLOAN_BUILDER>

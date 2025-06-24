@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inEQUAL_TERM SYSTEM "inEQUAL_TERM.dtd">
+<inEQUAL_TERM>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <IntRate>10</IntRate>
+   
+   <!-- Proceeds and Payment -->
+   <Proceeds>10000</Proceeds>
+   <Payment>200</Payment>
+   
+</inEQUAL_TERM>

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inAPY SYSTEM "inAPY.dtd">
+<inAPY 
+   Statement="Monthly">
+
+   <!-- Basic Input -->
+   <Principal>1000.00</Principal>
+   <Interest>61.68</Interest>
+
+</inAPY>

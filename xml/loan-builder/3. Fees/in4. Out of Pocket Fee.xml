@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Show fees explicitly and show the "Type" attribute in the AmTable. -->
+  <EditOutput
+    ShowFees="true"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="Premium" 
+    CalcType="OnPrincipal"
+    Amount="1.0" 
+    AddToPrin="false" 
+    AddToFinChg="false"/>
+
+</inLOAN_BUILDER>
+
+
+
+  <!-- Pocket Fee - A fee that's paid outside the parameters of the loan
+
+    If a fee is neither financed nor APR affecting, that fee is paid outside
+    the scope of the FedBox and is referred to as an "Out of Pocket Fee" or
+    simply a "Pocket Fee". An example of a fee like this would be a
+    single premium insurance product that is paid out of pocket (not financed).
+
+    Some reasons these fees may want to be included in the formal loan numbers:
+      o The fee is computed on a loan figure, such as the Principal balance
+      o All fees applying to the loan keep together for organization and disclosure
+
+    The sample fee is an insurance premium paid out of pocket (not financed) at
+    loan closing.
+
+  -->

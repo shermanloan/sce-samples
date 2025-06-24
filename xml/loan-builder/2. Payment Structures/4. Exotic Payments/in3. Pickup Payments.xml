@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <Advance Date="2019-01-01" Amount="20000.00" />
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <PmtStream Begin="2019-02-01" Term="24" />
+
+  <!-- Pickup Payments
+    Suppose someone wanted to make an additional thousand dollars 
+    to each December payment. These types of payments are referred to
+    as "pickup payments". One replaces the desired payments with the new
+    payment definition. Since the default payment type is "CalcPmt",
+    the following PmtStream definition defines December payments
+    as the calculated payment plus the "Amount" defined.
+  -->
+  <PmtStream 
+    Begin="0000-12-00"  
+    Amount="1000.00" />
+  
+
+ 
+</inLOAN_BUILDER>

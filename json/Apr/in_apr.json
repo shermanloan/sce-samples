@@ -1,0 +1,46 @@
+{
+  "Module" : "Apr",
+  "Data" : {
+    "Method" : "Actuarial",
+    "TestApr" : "10.125",
+    "TestFinChg" : "1616.25",
+    "TestTotPmt" : "11616.25",
+    "ActuarialOpts" : {
+      "SinglePayFraction" : "InDays",
+      "ODI" : false,
+      "SemiMonthlyFixedFraction" : false
+    },
+    "UsRuleOpts" : {
+      "Calendar" : "ActualDay",
+      "Divisor" : "365",
+      "CalendarOption" : "True365",
+      "PremBeforePmt" : true
+    },
+    "Construction" : {
+      "Interest" : "455.55",
+      "EndDate" : "2010-01-01",
+      "AsPrepaid" : false,
+      "Prepaid" : "0.00",
+      "PermanentAttached" : true,
+      "HalfCommitment" : true
+    },
+    "AmTableOpts" : {
+      "ForceDay" : "0",
+      "RoundInt" : "Nearest",
+      "DollarDec" : "3"
+    },
+    "Advances" : [
+      {
+        "Date" : "2008-01-01",
+        "AmtFin" : "10000"
+      }
+    ],
+    "PmtStreams" : [
+      {
+        "Begin" : "2010-02-01",
+        "Term" : "36",
+        "Pmt" : "322.67"
+      }
+    ]
+  }
+}

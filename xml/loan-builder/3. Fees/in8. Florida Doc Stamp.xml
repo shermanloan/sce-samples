@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <EditOutput
+    ShowFees="true"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="10.000" AccrualCode="320" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="Florida DocStamp" 
+    CalcType="OnPrincipal"
+    Amount="0.35" 
+    AddToPrin="true" 
+    AddToFinChg="false"
+    RoundBasis="100.00"
+    Round="up" />
+
+</inLOAN_BUILDER>
+
+
+  <!-- Florida DocStamp
+    ShowFees="true" causes outputs to explicitly recognize all fees as separate entities.    
+
+    A Florida doc stamp is a special type of fee that does not affect
+    the APR but is financed (added to Principal). This fee is computed
+    as a percentage of the principal balance rounded up to the next $100.
+
+    Calculation: Round Principal UP to the next $100 = 1003.85 up to 1100.00
+    Multiply 1100 * 0.35/100 = 3.85
+  -->

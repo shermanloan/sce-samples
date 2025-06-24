@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <!-- Pure Principal Payment
+    To make a payment that only reduces principal, specify the PmtType
+    to "PayPrin".
+  -->
+  <PmtStream
+    Begin="2019-01-15"
+    PmtType="PayPrin"
+    Amount="100.00" />
+ 
+</inLOAN_BUILDER>

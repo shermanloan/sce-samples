@@ -1,0 +1,33 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "// " : "NonMonthly Loans - Quarterly Loan",
+    "//_" : "As with the weekly loan, quarterly loans are established by",
+    "//-" : "changing the PPY field, in this case to '4'. The date of the",
+    "//!" : "first payment causes an ambiguity for when the next payment is",
+    "//*" : "to occur - on the 28th or on the last day of the month.",
+    "//~" : "The 'LastDay' field resolves this ambiguity. Set it to true to",
+    "//@" : "make the payments on the last day of each month, rather than the 28th.",
+    "PmtStreams": [
+      {
+        "Date": "2019-02-28",
+        "Term": "4",
+        "PPY": "4",
+        "LastDay": true
+      }
+    ]
+  }
+}

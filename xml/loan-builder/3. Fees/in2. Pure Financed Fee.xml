@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Show fees explicitly and show the "Type" attribute in the AmTable. -->
+  <EditOutput
+    ShowFees="true"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance Date="2019-01-01" Amount="10000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="FL Intangible Tax" 
+    CalcType="OnPrincipal"
+    Amount="0.20" 
+    AddToPrin="true" 
+    AddToFinChg="false"/>
+
+</inLOAN_BUILDER>
+
+
+
+  <!-- Pure Financed Fee: Intangible Tax (Financed, but non-APR affecting)
+    The Florida intangible tax is a fee imposed by the state that's often financed but does not affect the APR.
+
+    The fee is computed as a percentage of the principal, 
+    but is often expressed in "mills", or an amount per thousand.
+    1 Mill = 0.1 %
+    In this sample, the Intangible Tax rate is 2 mills or 0.2%
+
+  -->

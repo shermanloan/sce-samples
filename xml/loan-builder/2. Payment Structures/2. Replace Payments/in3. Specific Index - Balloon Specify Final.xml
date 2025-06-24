@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" />
+  <Advance Date="2019-01-01" Amount="20000.00" />
+  <PmtStream Begin="2019-02-01" Term="24" />
+
+  <!-- Specify Pmt Index - Specify Final Balloon
+    Set the year portion of the "Begin" attribute to the desired index number.
+    IIII-00-00, where "I" is a left zero-filled representation of the payment
+    index.
+  -->
+
+  <PmtStream PmtType="FixedPmt" Amount="10000.00" Begin="0024-00-00" />
+
+</inLOAN_BUILDER>

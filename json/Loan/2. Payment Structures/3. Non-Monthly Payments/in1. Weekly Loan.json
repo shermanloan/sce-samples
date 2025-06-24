@@ -1,0 +1,28 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "// " : "NonMonthly Loans - Weekly. To use a non-monthly payment frequency,",
+    "//_" : "set the value of the PPY field to the appropriate number - 52 in",
+    "//-" : "the case of weekly loans",
+    "PmtStreams": [
+      {
+        "Date": "2019-01-08",
+        "Term": "52",
+        "PPY": "52"
+      }
+    ]
+  }
+}

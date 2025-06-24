@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Show fees explicitly and show the "Type" attribute in the AmTable. -->
+  <EditOutput
+    ShowFees="false"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="Service Charge" 
+    Amount="50" 
+    CalcType="ServChg"
+
+    ServChgType="ByTerm"
+    EqualServChg="true"
+
+    Date="2019-02-01"
+    Term="12"
+
+    AddToPrin="false" 
+    AddToFinChg="true" />
+
+</inLOAN_BUILDER>
+
+
+
+  <!-- Service Charges - A Service Charge is a fee that's spread out over a payment stream.
+
+    This sample spreads a $50.00 fee over all the payments.
+
+    Set the "CalcType" to "ServChg", the ServChgType to "ByTerm" (divide the $50.00 service
+    charge by the term attribute of the FEE) and force all the fees to be
+    equal (to ensure all the payments are equal).
+
+    Notice the "Date" has been set to the date of the first payment and that
+    the term of the fees is equal to the term of the "PmtStream" element.
+
+  -->

@@ -1,0 +1,13 @@
+{
+  "Module" : "EqualPmt",
+  "Data" : {
+    "LoanDate" : "2022-08-22",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "4.500",
+    "Term" : "12",
+    "Payment" : "854.79",
+    "Settings" : {
+      "AccrualCode" : "320"
+    }
+  }
+}

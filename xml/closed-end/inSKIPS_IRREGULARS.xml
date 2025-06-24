@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inSKIPS_IRREGULARS SYSTEM "inSKIPS_IRREGULARS.dtd">
+<inSKIPS_IRREGULARS>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <IntRate>10</IntRate>
+   <Proceeds>10000.00</Proceeds>
+   <Term>36</Term>
+
+   <!-- Skip Summer Payments (Payment attribute may be omitted) -->
+   <IrregPmt Month="6" Payment="0"/> 
+   <IrregPmt Month="7"/> 
+   <IrregPmt Month="8"/>  
+
+   <!-- Thousand dollar payment in December, 2020  -->
+   <IrregPmt Month="12" Year="2020" Payment="1000" /> 
+
+</inSKIPS_IRREGULARS>

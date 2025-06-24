@@ -1,0 +1,41 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true
+    },
+    "Advances": [
+      {
+        "Date": "2017-09-01",
+        "Amount": "15000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "//" : "Interest accrues on an Actual/Actual Simple basis during Grace Period",
+        "Date": "2017-09-01",
+        "IntRate": "3.49",
+        "AccrualCode": "330"
+      },
+      {
+        "//" : "Begin accruing on a True360/360 US Rule basis",
+        "Date": "2019-03-07",
+        "AccrualCode": "304"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "//" : "Grace Period Interest Only Payments",
+        "Date": "2017-10-01",
+        "PmtType": "PayInt",
+        "Term": "18"
+      },
+      {
+        "//" : "180 computed payments",
+        "Date": "2019-04-07",
+        "PmtType": "CalcPmt",
+        "Term": "180"
+      }
+    ]
+  }
+}

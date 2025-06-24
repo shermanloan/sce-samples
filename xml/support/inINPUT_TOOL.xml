@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inINPUT_TOOL SYSTEM "inINPUT_TOOL.dtd">
+<inINPUT_TOOL
+   Account="1" 
+   LoanType="Equal" />

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <EditOutput
+    ShowType="true" />
+
+<!-- Roll to Advance: Commercial Loan
+
+  This sample assumes three advances preceding quarterly
+  payments for ten years. Each year has an Interest Only
+  payment, a skipped payment, a pure principal payment
+  then a constant fixed payment.
+
+  The results of the calculation appear in the Amortization
+  schedule as Type="Advance" elements.
+
+-->
+
+  <!-- ******** Advance Period ******** -->  
+  <EditInterest 
+    IntRate="5.000" 
+    AccrualCode="320"
+    Date="2019-01-01" />
+
+  <!-- FIRST ADVANCE -->
+  <Advance 
+    Compute="true"
+    Date="2019-01-01"  />
+
+  <!-- SECOND ADVANCE (NOT COMPUTED) -->
+  <Advance 
+    Date="2019-07-01" 
+    Amount="20000" />
+
+  <!-- THIRD ADVANCE ($5000 Greater than 1st)-->
+  <Advance 
+    Date="2020-01-01" 
+    Compute="true"
+    Amount="5000" />
+
+  <!-- ******** Repayment Period ******** -->  
+  <PmtStream 
+    PmtType="PayInt"
+    Begin="2020-03-01" 
+    PPY="1"
+    Term="10" />
+
+  <PmtStream 
+    PmtType="PayPrin"
+    Amount="5000.00"
+    Begin="2020-09-01" 
+    PPY="1"
+    Term="10" />
+
+  <PmtStream 
+    PmtType="FixedPmt"
+    Amount="10000.00"
+    Begin="2020-12-01" 
+    PPY="1"
+    Term="10" />
+ 
+</inLOAN_BUILDER>

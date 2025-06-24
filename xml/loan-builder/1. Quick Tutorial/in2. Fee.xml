@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="10.000" AccrualCode="320" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <!-- Prepaid Fee
+    A documentary fee of $50.00 is added to the loan.
+    When the date is not specified, the fee is assumed to
+    be on the advance. Multiple advances require dates.
+  -->
+
+  <Fee 
+    Name="DocFee" 
+    Amount="50" 
+    AddToPrin="false" 
+    AddToFinChg="true" />
+
+</inLOAN_BUILDER>
+
+<!-- NOTES
+
+One may add as many fees to a loan as are required without
+restriction.
+
+"AddToPrin" determins whether or not the fee is financed
+"AddToFinChg" determines whether or not the fee affects the APR
+
+-->

@@ -1,0 +1,26 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "// " : "Single Payment Note - specify the date only that the payment is",
+    "//_" : " made in the PmtStream element. A term of one and a PmtType of",
+    "//-" : "'CalcPmt' are both assumed.",
+    "PmtStreams": [
+      {
+        "Date": "2020-01-01"
+      }
+    ]
+  }
+}

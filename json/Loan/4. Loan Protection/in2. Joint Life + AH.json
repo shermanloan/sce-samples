@@ -1,0 +1,47 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "2000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "36"
+      }
+    ],
+    "// " : "Joint Life + Disability (Accident & Health, or AH)",
+    "//_" : "Notice now that we have two products contained within the", 
+    "//-" : "'Protection' object. The response also has two products within", 
+    "//!" : "the 'Protection' parent object.",
+    "//|" : "Notice also that the 'LoanType' is displayed in the response as", 
+    "//~" : "a field of the Protection object.",
+    "Protection": {
+      "Products": [
+        {
+          "Code": "LI",
+          "Birthdays": [
+            "1966-04-16",
+            "1961-08-28"
+          ]
+        },
+        {
+          "Code": "AH",
+          "Birthdays": [
+            "1961-08-28"
+          ]
+        }
+      ]
+    }
+  }
+}

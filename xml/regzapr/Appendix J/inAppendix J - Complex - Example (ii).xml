@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="1978-03-03" 
+    AmtFin="7350.00" />
+
+  <!-- First Pmt Group -->
+  <PmtStream Begin="1978-09-15" Term="3" Pmt="1000.00"/>
+
+  <!-- Single Payment -->
+  <PmtStream Begin="1979-03-15" Pmt="2000.00"/>
+
+  <!-- Three More Monthly Pmts -->
+  <PmtStream Begin="1979-09-15" Term="3" Pmt="750.00"/>
+
+  <!-- Final Payment -->
+  <PmtStream Begin="1980-02-01" Pmt="1000.00"/>
+
+</inREGZ_APR>

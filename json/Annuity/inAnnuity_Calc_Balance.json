@@ -1,0 +1,9 @@
+{
+  "Module" : "Annuity",
+  "Data" : {
+    "Calculate" : "Balance",
+    "Rate" : "5.000",
+    "Income" : "5000.00",
+    "Term" : "360"
+  }
+}

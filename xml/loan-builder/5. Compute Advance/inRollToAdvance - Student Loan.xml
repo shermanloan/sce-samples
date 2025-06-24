@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <EditOutput
+    ShowType="true" />
+
+<!-- Roll to Advance: Student Loan
+
+  This sample assumes ten years or 120 monthly payments
+  of $300.00 and asks how much the student can borrow in
+  two advances, the second of which is $2000.00 more than
+  the first.
+
+  The Grace Period and Repayment Period have different
+  interest rates and methods of interest accrual.
+
+
+  The results of the calculation appear in the Amortization
+  schedule as Type="Advance" elements.
+
+-->
+
+  <!-- ******** Grace Period ******** -->
+  <EditInterest 
+    IntRate="5.000" 
+    AccrualCode="331"
+    Date="2019-01-01" />
+
+  <!-- FIRST ADVANCE -->
+  <Advance 
+    Compute="true"
+    Date="2019-01-01"  />
+
+  <!-- SECOND ADVANCE ($2000 greater than First) -->
+  <Advance 
+    Date="2020-01-01" 
+    Compute="true"
+    Amount="2000" />
+
+  <!-- ******** Repayment Period ******** -->  
+  <EditInterest 
+    IntRate="10.000" 
+    AccrualCode="304"
+    Date="2020-01-01"
+    Capitalize="true" />
+ 
+  <PmtStream 
+    PmtType="FixedPmt"
+    Amount="300.00"
+    Begin="2020-02-01" 
+    Term="120" />
+ 
+</inLOAN_BUILDER>

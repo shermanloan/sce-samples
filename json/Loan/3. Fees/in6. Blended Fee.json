@@ -1,0 +1,46 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true,
+      "ShowFees": false
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "// " : "Blended Fee - suppose one purchased a warranty to be paid on the", 
+    "//_" : "first payment. Suppose further that this fee was to be a part of", 
+    "//-" : "a regular stream of payments to avoid disclosure of an odd first", 
+    "//!" : "payment. This fee would be computed as illustrated below.",
+    "//|" : "Note that the fee is added to principle but not finance charge. The",
+    "//~" : "reason for this configuration is that the warranty is presumed",
+    "//@" : "optional. Set 'Blended' to false, and the fee will be added to the",
+    "//#" : "first payment, creating an odd first payment.",
+    "Fees": [
+      {
+        "Date": "2019-02-01",
+        "Name": "Warranty",
+        "Amount": "75.00",
+        "AddToPrin": true,
+        "AddToFinChg": false,
+        "Blended": true
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

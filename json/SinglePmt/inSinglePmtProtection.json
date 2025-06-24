@@ -1,0 +1,40 @@
+{
+  "Module" : "SinglePmt",
+  "Data" : {
+    "LoanDate" : "2022-07-20",
+    "PmtDate" : "2022-12-31",
+    "IntRate" : "5.500",
+    "Proceeds" : "5000.00",
+    "Fees" : [
+      {
+        "Name" : "Financed Prepaid 1",
+        "AddToFinChg" : true,
+        "AddToPrin" : true,
+        "CalcType" : "Dollar",
+        "Entry" : "25.25"
+      },
+      {
+        "Name" : "Financed Fee 2",
+        "AddToFinChg" : false,
+        "AddToPrin" : true,
+        "CalcType" : "Dollar",
+        "Entry" : "74.75"
+      }
+    ],
+    "ServiceCharges" : [
+      {
+        "Name" : "Service Charge 1",
+        "CalcType" : "LumpSum",
+        "Entry" : "55.00"
+      }
+    ],
+    "Protection" : {
+      "ShowCaps" : true,
+      "Life" : {
+        "Covers" : "both"
+      },
+      "Birthday1" : "1969-11-21",
+      "Birthday2" : "1966-10-02"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-02",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-02",
+        "IntRate": "5.000",
+        "AccrualCode": "301"
+      }
+    ],
+    "// " : "Interest Only - specify a payment stream of type 'PayInt' for the",
+    "//_" : "entire term. The SCE will automatically calculate the final payment.",
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "PmtType": "PayInt",
+        "Term": "12"
+      }
+    ]
+  }
+}

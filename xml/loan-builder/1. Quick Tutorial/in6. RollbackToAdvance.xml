@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- The Advance: Calculate
+    To compute the advance, set "Compute" to "true"
+    PmtType cannot be of type "CalcPmt" when computing the advance.
+  -->
+
+  <Advance 
+    Date    ="2019-01-01" 
+    Compute ="true" />
+
+  <PmtStream 
+    PmtType = "FixedPmt"
+    Amount  = "400.00"
+    Begin   = "2019-02-01" 
+    Term    = "12" />
+
+  <!-- Basic Inputs -->
+  <EditInterest Date="2019-01-01" IntRate="10.000" AccrualCode="320" />
+
+</inLOAN_BUILDER>
+
+<!-- NOTES
+
+-->

@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inARM SYSTEM "inARM.dtd">
+<inARM AccrualCode="320">
+
+   <!-- Turn on TILA RESPA 2015 disclosures -->
+   <TILARESPA2015/>
+
+   <!-- Basic Input -->
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <Proceeds>100000.00</Proceeds>
+   <Term>120</Term>
+
+   <!-- Teaser Rate -->
+   <TeaserRate>4</TeaserRate>
+   <TeaserTerm>36</TeaserTerm>
+
+   <!-- Final Rate = Index + Margin -->
+   <Index>6</Index>
+   <Margin>3</Margin>
+
+   <!-- Rate Step Parameters -->
+   <TermStep>12</TermStep>
+   <AnnualRateIncrease>2</AnnualRateIncrease>
+
+   <!-- Rate Variance Parameters -->
+   <MaxRateIncrease>6</MaxRateIncrease>
+   <MinRate>2</MinRate>
+   <MaxRate>20</MaxRate>
+   <ARM_Tweaks StairStepDown="true" />
+
+</inARM>
+
+

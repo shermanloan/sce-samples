@@ -1,0 +1,10 @@
+{
+  "Module" : "InterestOnly",
+  "Data" : {
+    "LoanDate" : "2022-08-22",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "4.500",
+    "Proceeds" : "10000.00",
+    "Term" : "12"
+  }
+}

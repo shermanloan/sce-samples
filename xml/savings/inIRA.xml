@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inIRA SYSTEM "inIRA.dtd">
+<inIRA>
+
+   <!-- Basic Input -->
+   <BeginBalance>10000.00</BeginBalance>
+   <Deposit DepositFrequency="annual">2000.00</Deposit>
+   <IntRate>5.000</IntRate>
+   <CurrentAge>38</CurrentAge>
+   <RetireAge>65</RetireAge>
+   <FutureValue></FutureValue>
+
+</inIRA>

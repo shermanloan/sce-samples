@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE inAUTO SYSTEM "inAUTO.dtd">
+<inAUTO>
+
+   <!-- Required -->
+   <Price>55000.00</Price>
+   
+   <!-- Down Payments -->
+   <CashDown>10000.00</CashDown>
+   <GrossTrade>5000.00</GrossTrade>
+   <Lien>225</Lien>
+   
+   <!-- Fees -->
+   <Rebate ApplyToBalance="true">500.00</Rebate>
+   <ServiceContract>150.00</ServiceContract>
+   <TaxedFees>50.00</TaxedFees>
+   <NonTaxedFees>75.00</NonTaxedFees>
+   
+   <!-- Tax -->
+   <Tax Method="PriceTrade" Rate="7.250" RebateReduce="true"></Tax>
+   <LuxTax Rate="10.000" Threshold="50000.00" />
+   
+</inAUTO>

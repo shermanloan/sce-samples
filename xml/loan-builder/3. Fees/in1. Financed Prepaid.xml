@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Show fees explicitly and show the "Type" attribute in the AmTable. -->
+  <EditOutput
+    ShowFees="true"
+    ShowType="true" />
+
+  <!-- Basic Input -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="12" />
+
+  <Fee 
+    Name="FinPrepaid" 
+    Amount="75.00" 
+    AddToPrin="true" 
+    AddToFinChg="true" />
+
+</inLOAN_BUILDER>
+
+
+
+  <!-- Financed Prepaid Fee
+    ShowFees="true" in element "EditOutput" controls the explicit recognition of
+    individual fees, both the amortization table and the "Moneys" output.
+
+    Prepaid fees are APR affecting fees that occur on the date of the advance.
+    This seventy-five dollar fee is also added to the principal (AddToPrin="true").
+    Notice that the prepaid causes the Amount Financed to be different from
+    the Principal Balance.
+  -->

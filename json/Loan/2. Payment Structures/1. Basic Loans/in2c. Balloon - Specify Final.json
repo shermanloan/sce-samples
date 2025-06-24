@@ -1,0 +1,35 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "// " : "Balloon: Specify Final Payment",
+    "//_" : "1. Establish a payment stream of CalcPmt payments (default).",
+    "//-" : "2. Replace the final payment with a specified payment. Replace",
+    "//!" : "payments can be specified several ways (See the 'Replace Payments'",
+    "//|" : "directory for more or consult the manual for a full explanation).",
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      },
+      {
+        "Date": "0012-00-00",
+        "PmtType": "FixedPmt",
+        "Amount": "500.00",
+        "// " : "Note that if the 'Term' field is eliminated, the SCE assumes a term of 1."
+      }
+    ]
+  }
+}

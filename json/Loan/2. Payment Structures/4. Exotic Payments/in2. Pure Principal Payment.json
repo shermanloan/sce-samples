@@ -1,0 +1,31 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      },
+      {
+        "// " : "Pure Principal Payment - to make a payment that only reduces", 
+        "//_" : "principal, set the value of the PmtType field  to 'PayPrin'.",
+        "Date": "2019-01-15",
+        "PmtType": "PayPrin",
+        "Amount": "100.00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Module" : "Ira",
+  "Data" : {
+    "Calculate" : "Deposit",
+    "Compounding" : "Annual",
+    "BeginBalance" : "2000.00",
+    "DepositFreq" : "Annual",
+    "CurrentAge" : "30",
+    "RetireAge" : "65",
+    "Rate" : "5.000",
+    "FV" : "500000.00"
+  }
+}

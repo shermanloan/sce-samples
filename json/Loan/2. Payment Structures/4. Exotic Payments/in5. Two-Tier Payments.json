@@ -1,0 +1,34 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "// " : "Interest rate change w/ resulting 2 payment streams",
+    "//_" : "Interest changes from 5% the first year to 7% the second.",
+    "//-" : "To have the payment adjust to the new interest rate,",
+    "//!" : "set the 'NewPmt' attribute to true; otherwise, the payment will",
+    "//|" : "stay level throughout the term of the loan.",
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      },
+      {
+        "Date": "2020-01-01",
+        "IntRate": "7.000",
+        "NewPmt": true
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "24"
+      }
+    ]
+  }
+}

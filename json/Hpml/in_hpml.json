@@ -1,0 +1,24 @@
+[
+  {
+    "Module" : "Hpml",
+    "Data" : {
+      "LienType" : "first",
+      "IsJumbo" : false,
+      "RateType" : "fixed",
+      "LockInDate" : "2018-01-05",
+      "RegZApr" : "5.125",
+      "TermInYears" : "30"
+    }
+  },
+  {
+    "Module" : "Hpml",
+    "Data" : {
+      "LienType" : "subordinate",
+      "IsJumbo" : false,
+      "RateType" : "adjustable",
+      "LockInDate" : "2018-01-12",
+      "RegZApr" : "7.53",
+      "TermInYears" : "30"
+    }
+  }
+]

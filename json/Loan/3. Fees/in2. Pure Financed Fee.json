@@ -1,0 +1,43 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true,
+      "ShowFees": true
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "10000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "// " : "Pure Financed Fee: Intangible Tax (Financed, but non-APR affecting)",
+    "//_" : "The Florida intangible tax is a fee imposed by the state that is", 
+    "//-" : "often financed but does not affect the APR. The fee is computed as",
+    "//!" : "a percentage of the principal, but is often expressed in 'mills',",
+    "//|" : "or an amount per thousand. 1 Mill = 0.1 %. In this sample, the", 
+    "//*" : "Intangible Tax rate is 2 mills or 0.2%",
+    "Fees": [
+      {
+        "Name": "FL Intangible Tax",
+        "CalcType": "OnPrincipal",
+        "Amount": "0.20",
+        "AddToPrin": true,
+        "AddToFinChg": false
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

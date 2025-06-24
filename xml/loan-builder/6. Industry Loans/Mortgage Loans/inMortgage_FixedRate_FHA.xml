@@ -1,0 +1,26 @@
+<!-- Fixed Rate FHA Loan with 5% down payment -->
+<inLOAN_BUILDER>
+
+  <!-- Basic Input -->
+  <EditInterest Date="2025-01-01" IntRate="5.000" AccrualCode="304" />
+  <Advance      Date="2025-01-01" Amount="100000.00" />
+  <PmtStream   Begin="2025-02-01" Term="360" />
+
+  <!-- Mortgage Insurance -->
+  <Mortgage_Insurance
+    PropertyValue="100000"
+    CashDown="5000"
+    Type="FHA">
+
+      <!-- Rate Expressed as a %/Year -->
+      <MI_Rate>0.55</MI_Rate>
+
+      <!-- 1.75% of (Principal-UpFront) and financed -->
+      <UpFront Paid="Financed" Units="Points">1.75</UpFront>
+
+      <!-- Premiums are paid periodically (monthly) for the duration of the loan -->
+      <Periodic />
+
+   </Mortgage_Insurance>
+   
+</inLOAN_BUILDER>

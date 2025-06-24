@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="1978-03-18" 
+    AmtFin="400" />
+
+  <!-- The Payment stream -->
+  <PmtStream Begin="1978-04-20" Pmt="39.50" />
+
+  <PmtStream Begin="1978-05-18" Pmt="38.31" />
+  <PmtStream Begin="1978-06-15" Pmt="38.31" />
+  <PmtStream Begin="1978-07-13" Pmt="38.31" />
+  <PmtStream Begin="1978-08-10" Pmt="38.31" />
+  <PmtStream Begin="1978-09-07" Pmt="38.31" />
+  <PmtStream Begin="1978-10-05" Pmt="38.31" />
+  <PmtStream Begin="1978-11-02" Pmt="38.31" />
+  <PmtStream Begin="1978-11-30" Pmt="38.31" />
+  <PmtStream Begin="1978-12-28" Pmt="38.31" />
+  <PmtStream Begin="1979-01-25" Pmt="38.31" />
+  <PmtStream Begin="1979-02-22" Pmt="38.31" />
+
+</inREGZ_APR>

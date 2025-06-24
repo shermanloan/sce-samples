@@ -1,0 +1,33 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "// " : "Balloon: Specify Amortization Term",
+    "//_" : "1. Specify the Term attribute of the PmtStream equal to the", 
+    "//-" : "desired amortization term.",
+    "//!" : "2. Specify the YYYY portion of the EarlyPayoffDate field to",
+    "//|" : "the short term call.",
+    "EditOutput": {
+      "EarlyPayoffDate": "0006-00-00"
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "PmtType": "CalcPmt",
+        "Term": "12"
+      }
+    ]
+  }
+}

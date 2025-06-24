@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+<!-- Loan Builder module
+  The root element defines which loan module the SCEX will use.
+-->
+
+  <!-- Interest Accrual
+    Specify when interest begins to accrue, the rate
+    and the accrual method (See Manual for a complete list)
+    of accrual methods. We will use "Actual/365 USRule".
+  -->
+  <EditInterest 
+    Date="2019-01-01"
+    IntRate="10.000"
+    AccrualCode="320" />
+
+  <!-- The Advance 
+    Specify when the advance (Proceeds, or "Amount requested")
+    and the amount of the advance.
+  -->
+
+  <Advance 
+    Date="2019-01-01"
+    Amount="1000.00" />
+
+  <!-- The Payments 
+    Define when the payment stream begins 
+    and the number of payments. 
+    Monthly payments are assumed.
+  -->
+
+  <PmtStream 
+    Begin="2019-02-01" 
+    Term="12" />
+
+</inLOAN_BUILDER>
+
+<!-- NOTES
+
+This loan illustrates the essential elements of Loan Builder:
+
+  EditInterest
+  Advance
+  PmtStream
+
+All loans will have these elements and variations thereof.
+
+Think of LoanBuilder as a tool box, where elements are
+added to the basic structure of this loan to further clarify
+the particular details of the loan.
+
+-->

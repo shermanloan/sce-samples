@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- Advances -->
+  <Advance Date="1978-09-05" AmtFin="1800.00" />
+  <Advance Date="1979-09-05" AmtFin="1800.00" />
+  <Advance Date="1980-09-05" AmtFin="1800.00" />
+  <Advance Date="1981-09-05" AmtFin="1800.00" />
+
+  <!-- Advances -->
+  <Advance Date="1979-01-05" AmtFin="1000.00" />
+  <Advance Date="1980-01-05" AmtFin="1000.00" />
+  <Advance Date="1981-01-05" AmtFin="1000.00" />
+  <Advance Date="1982-01-05" AmtFin="1000.00" />
+
+  <!-- Payment Stream -->
+  <PmtStream Begin="1978-07-01" Term="50" Pmt="240.00"/>
+
+</inREGZ_APR>

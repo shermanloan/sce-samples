@@ -1,0 +1,44 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true
+    },
+    "Advances": [
+      {
+        "Date": "2017-09-01",
+        "Amount": "6000.00"
+      },
+      {
+        "Date": "2018-01-08",
+        "Amount": "8000.00"
+      },
+      {
+        "Date": "2018-04-08",
+        "Amount": "10000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "//" : "Interest accrues on an Actual/Actual Simple basis during Grace Period",
+        "Date": "2017-09-01",
+        "IntRate": "3.49",
+        "AccrualCode": "330"
+      },
+      {
+        "//" : "Capitalize Interest, then Accrue on a True360/360 basis",
+        "Date": "2019-03-07",
+        "AccrualCode": "304",
+        "Capitalize": true
+      }
+    ],
+    "PmtStreams": [
+      {
+        "//" : "180 computed payments",
+        "Date": "2019-04-07",
+        "PmtType": "CalcPmt",
+        "Term": "180"
+      }
+    ]
+  }
+}

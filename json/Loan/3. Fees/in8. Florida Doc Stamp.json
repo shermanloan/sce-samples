@@ -1,0 +1,45 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true,
+      "ShowFees": true
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "// " : "Florida DocStamp - a Florida doc stamp is a special type of fee", 
+    "//_" : "that does not affect the APR but is financed (added to Principal).", 
+    "//-" : "This fee is computed as a percentage of the principal balance",
+    "//!" : "rounded up to the next $100.",
+    "//|" : "Calculation: Round Principal UP to the next $100 = 1003.85 up to",
+    "//~" : "1100.00.  Multiply 1100 * 0.35/100 = 3.85",
+    "Fees": [
+      {
+        "Name": "Florida DocStamp",
+        "CalcType": "OnPrincipal",
+        "RoundBasis": "100.00",
+        "Round": "Up",
+        "Amount": "0.35",
+        "AddToPrin": true,
+        "AddToFinChg": false
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

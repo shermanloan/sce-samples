@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <EditOutput
+    ShowType="true" />
+
+<!-- Basic Sample: Compute Advance 
+
+  This sample assumes payments of 322.67 for three years,
+  and calculates what advance would produce this payment stream.
+
+  The results of the calculation appear in the Amortization
+  schedule as Type="Advance" elements. 
+
+-->
+ 
+  <Advance 
+    Date="2019-01-01" 
+    Compute="true" />
+ 
+  <EditInterest 
+    IntRate="10.00" 
+    Date="2019-01-01" 
+    AccrualCode="304" />
+ 
+  <PmtStream 
+    PmtType="FixedPmt"
+    Begin="2019-02-01" 
+    Amount="322.67" 
+    Term="36" />
+ 
+</inLOAN_BUILDER>

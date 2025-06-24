@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <Advance Date="2019-01-01" Amount="1000.00" />
+
+
+  <!-- NonMonthly Loans - SemiMonthly Loan
+    This loan shows how to compute a SemiMonthly loan, where the "next payment"
+    after the initially defined payment is at the end of the month.
+    Remove the "SemimonthlyDay" attribute to see the next payment happening
+    on the first of the next month, rather than the end of the month.
+  -->    
+
+  <PmtStream 
+    PPY="24" 
+    Begin="2019-01-16" 
+    SemimonthlyDay="31"
+    Term="24" />
+
+</inLOAN_BUILDER>

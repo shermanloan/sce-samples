@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <Advance Date="2019-01-01" Amount="1000.00" />
+  <PmtStream Begin="2019-02-01" Term="24" />
+
+  <!-- 2 Tiers of Payments
+    Interest changes from 5% the first year to 7% the second.
+    To increase the payment to reflect this rate increase, 
+    set the NewPmt attribute to "true"; otherwise, the payment will
+    remain the same.    
+  -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <EditInterest Date="2020-01-01" IntRate="7.000" NewPmt="true" />
+  
+ 
+</inLOAN_BUILDER>

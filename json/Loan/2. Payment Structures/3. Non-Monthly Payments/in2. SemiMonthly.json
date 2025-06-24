@@ -1,0 +1,32 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "301"
+      }
+    ],
+    "// " : "NonMonthly Loans - SemiMonthly Loan",
+    "//_" : "This loan shows how to compute a SemiMonthly loan, where the",
+    "//-" : "'next payment' after the initially defined payment is at the end",
+    "//!" : "of the month. Remove the 'SemimonthlyDay' field to see the next", 
+    "//|" : "payment happening on the first of the next month, rather than the", 
+    "//*" : " end of the month.",
+    "PmtStreams": [
+      {
+        "Date": "2019-01-16",
+        "Term": "24",
+        "PPY": "24",
+        "SemimonthlyDay": "31"
+      }
+    ]
+  }
+}

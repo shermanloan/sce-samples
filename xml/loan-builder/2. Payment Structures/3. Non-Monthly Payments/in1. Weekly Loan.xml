@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <Advance Date="2019-01-01" Amount="1000.00" />
+
+
+  <!-- NonMonthly Loans - Weekly 
+    To use Non-Monthly loans, specify the payments per year
+    to the appropriate number, 52 in the case of weekly loans
+  -->    
+
+  <PmtStream 
+    PPY="52" 
+    Begin="2019-01-08" 
+    Term="52" />
+
+</inLOAN_BUILDER>

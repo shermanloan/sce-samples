@@ -1,0 +1,37 @@
+{
+  "// ": "The Module field defines which module the SCEJSON will use.",
+  "Module": "Loan",
+  "///": "The Data JSON Object holds all of the data required for the",
+  "//-": "requested module.",
+  "Data": {
+    "// " : "This loan illustrates the essential elements of the Loan module:",
+    "//_" : "Advances, AccrualConfigs, and PmtStreams.",
+    "Advances": [
+      {
+        "// ": "Specify when the advance (Proceeds, or Amount requested) and",
+        "//_": "the amount of the advance.",
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "// ": "Specify the interest accrual configuration: when interest",
+        "//_": "begins to accrue, the rate and the accrual code (see manual",
+        "///": "for a complete list of accrual codes). We will use accrual",
+        "//-": "code 320, which is 'Actual/365 USRule'.",
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "// ": "Define when the payment stream begins and the number of",
+        "//_": "computed payments. Monthly payments are assumed.",
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

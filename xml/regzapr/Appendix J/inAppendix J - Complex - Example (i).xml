@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inREGZ_APR SYSTEM "inREGZ_APR.dtd" >
+<inREGZ_APR DecAccuracy="2">
+
+  <!-- The Advance -->
+  <Advance 
+    Date="1978-01-25" 
+    AmtFin="2135.00" />
+
+  <!-- First Pmt Group -->
+  <PmtStream Begin="1978-02-20" Pmt="100.00"/>
+  <PmtStream Begin="1978-03-20" Pmt="100.00"/>
+  <PmtStream Begin="1978-04-17" Pmt="100.00"/>
+  <PmtStream Begin="1978-05-15" Pmt="100.00"/>
+  <PmtStream Begin="1978-06-12" Pmt="100.00"/>
+  <PmtStream Begin="1978-07-10" Pmt="100.00"/>
+  <PmtStream Begin="1978-08-07" Pmt="100.00"/>
+  <PmtStream Begin="1978-09-04" Pmt="100.00"/>
+  <PmtStream Begin="1978-10-02" Pmt="100.00"/>
+
+  <!-- Second Pmt Group -->
+  <PmtStream Begin="1978-11-13" Pmt="100.00"/>
+  <PmtStream Begin="1978-12-11" Pmt="100.00"/>
+  <PmtStream Begin="1979-01-08" Pmt="100.00"/>
+  <PmtStream Begin="1979-02-05" Pmt="100.00"/>
+  <PmtStream Begin="1979-03-05" Pmt="100.00"/>
+  <PmtStream Begin="1979-04-02" Pmt="100.00"/>
+
+  <!-- Third Pmt Group -->
+  <PmtStream Begin="1979-05-14" Pmt="100.00"/>
+  <PmtStream Begin="1979-06-11" Pmt="100.00"/>
+  <PmtStream Begin="1979-07-09" Pmt="100.00"/>
+  <PmtStream Begin="1979-08-06" Pmt="100.00"/>
+  <PmtStream Begin="1979-09-03" Pmt="100.00"/>
+  <PmtStream Begin="1979-10-01" Pmt="100.00"/>
+
+  <!-- Fourth Pmt Group -->
+  <PmtStream Begin="1979-11-12" Pmt="100.00"/>
+  <PmtStream Begin="1979-12-10" Pmt="100.00"/>
+  <PmtStream Begin="1980-01-07" Pmt="100.00"/>
+
+</inREGZ_APR>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inLOAN_BUILDER SYSTEM "inLOAN_BUILDER.dtd" >
+<inLOAN_BUILDER>
+
+  <!-- Basic Input (Including 24 payments to calculate) -->
+  <EditInterest Date="2019-01-01" IntRate="5.000" AccrualCode="304"/>
+  <Advance Date="2019-01-01" Amount="1000.00" />
+
+
+  <!-- NonMonthly Loans - Quarterly Loan
+    As with the weekly loan, quarterly loans are established by changing
+    the PPY attribute, in this case to "4".
+    The date of the first payment causes an ambiguity for when the next
+    payment is to occur - on the 28th or on the last day of the month.
+
+    The "LastDay" attribute resolves this ambiguity. Set it to "true"
+    to make the payments on the last day of each month, rather than the 28th.
+  -->    
+
+  <PmtStream 
+    PPY="4" 
+    Begin="2019-02-28" 
+    Term="4" 
+    LastDay="true" />
+
+</inLOAN_BUILDER>

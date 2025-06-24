@@ -1,0 +1,52 @@
+<!-- A 5/1 ARM means a teaser term of five years
+     with rates adjusting annually following the
+     teaser term. 
+-->
+
+<inLOAN_BUILDER>
+
+   <!-- The loan amount. Fees are not included to simplify the lesson. -->
+   <Advance
+      Date="2025-01-01"
+      Amount="300000"/>
+
+   <!-- EditInterest elements are always required with LoanBuilder. 
+        The "IntRate" attribute gets overridden by the Teaser Rate 
+        but all other attributes are kept. The zero rate emphasizes 
+        this point.
+   -->   <EditInterest
+      Date="2025-01-01"
+      IntRate="0.000"
+      AccrualCode="304" />
+
+   <!-- The foundation payments, all of which are of type "CalcPmt" by default 
+        The payment amounts will increase when the rate increases, unless the 
+        ARM CalcType is set to "Balloon"
+   -->
+   <PmtStream
+      Begin="2025-02-01"
+      Term="360" />
+
+   <!-- ARM Declaration -->
+   <ARM>
+
+      <!-- Teaser Rate will override the EditInterest Rate -->
+      <Teaser 
+         Rate="6.500" 
+         Term="60" />
+
+      <!-- Fully Indexed Rate definition -->
+      <FullyIndexedRate 
+         Index="4.0" 
+         Margin="2.75" />
+
+      <!-- Rate Caps that limit volitility -->
+      <Limits 
+         Floor="2.0" 
+         Ceiling="14.0" 
+         Annual="2.0" 
+         Lifetime="5.0" />
+
+   </ARM>
+
+</inLOAN_BUILDER>

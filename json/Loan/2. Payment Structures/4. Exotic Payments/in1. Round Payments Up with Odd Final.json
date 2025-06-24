@@ -1,0 +1,33 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "BusinessRules": {
+      "// " : "Business Rule - Odd Final Payment",
+      "//_" : "To ensure a zero ending balance after amortization, one can",
+      "//-" : "request an adjustment to the final payment.",
+      "AmError": "AdjPmt"
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304",
+        "// " : "Round Payments - changing how payments are rounded is",
+        "//_" : "accomplished by using the PmtRound field, as follows:",
+        "PmtRound": "Up"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE inDEALER_RESERVE  SYSTEM "inDEALER_RESERVE.dtd" >
+
+<!-- Difference In Rates                     -->
+<!-- Unit Period 360 Simple                -->
+<!-- Note: in matching the Dealer reserve, the odd final payment is taken into account -->
+
+<inDEALER_RESERVE 
+   Method="DifferenceInRates" 
+   AccrualCode="201"
+   PPY="12" 
+   
+  
+   >
+   
+   <LoanDate>2019-01-01</LoanDate>
+   <PmtDate>2019-02-01</PmtDate>
+   <Term>36</Term>
+
+   <AmtFin>10000.00</AmtFin>
+   <Payment>322.67</Payment>
+   <Final>322.67</Final>
+   <FinChg>0.00</FinChg>
+   <ProcFee>25</ProcFee>
+   
+   <BuyRate>8.000</BuyRate>
+   <NoteRate>10.000</NoteRate>
+   <ReservePercent>95.000</ReservePercent>
+   <FlatFee>0.0</FlatFee>
+
+</inDEALER_RESERVE>

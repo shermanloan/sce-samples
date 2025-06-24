@@ -1,0 +1,17 @@
+{
+  "Module" : "PrincipalPlus",
+  "Data" : {
+    "LoanDate" : "2022-09-01",
+    "PmtDate" : "2022-10-01",
+    "IntRate" : "6.000",
+    "Proceeds" : "10000.00",
+    "FirstPrincipalPmt" : "3",
+    "PrincipalReduction" : "100",
+    "PrincipalPmts" : "8",
+    "PPY" : "12",
+    "PrincipalPPY" : "4",
+    "Settings" : {
+      "AccrualCode" : "301"
+    }
+  }
+}

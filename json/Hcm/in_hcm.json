@@ -1,0 +1,44 @@
+{
+  "Module" : "Hcm",
+  "Data" : {
+    "LockInDate" : "2018-01-09",
+    "LienType" : "first",
+    "RateType" : "fixed",
+    "Dwelling" : "personal_property",
+    "Term" : "360",
+    "PPY" : "12",
+    "LoanAmount" : "255102.04",
+    "AmountFinanced" : "255102.04",
+    "Apr" : "9.91",
+    "FinanceCharge" : "292688.40",
+    "InterestCharge" : "266366.36",
+    "FederalStatePremiumsFees" : "0",
+    "PMI" : {
+      "After" : "20625.00",
+      "AtOrBefore" : "625.00",
+      "MaxAllowedAtOrBefore" : "7653.06"
+    },
+    "ThirdPartyCharges" : "0.00",
+    "DiscountPoints" : {
+      "Points" : "2.0",
+      "FullRate" : "6.000",
+      "Fee" : "5102.04"
+    },
+    "LoanOriginatorFees" : "0.00",
+    "RealEstate" : {
+      "Fees" : "0.00",
+      "FinanceAmt" : "0.00"
+    },
+    "CreditInsurance" : {
+      "Premiums" : "0.00",
+      "FinanceAmt" : "0.00"
+    },
+    "PrepaymentPenalty" : {
+      "Max" : "0.00",
+      "Total" : "0.00",
+      "FinanceAmt" : "0.00",
+      "After36Months" : false,
+      "AmountPrepaid" : "0.00"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE inREFUND SYSTEM "inREFUND.dtd">
+<inREFUND Account="1" PPY="monthly" LoanType="equal">
+    <LoanDate>2002-10-02</LoanDate>
+    <RefundDate>2005-10-02</RefundDate>
+    <PmtDate>2002-11-02</PmtDate>
+    <IntRate>10.123</IntRate>
+    <Term>60</Term>
+    <AmortTerm>60</AmortTerm>
+    <Payment>250</Payment>
+    <Balloon>250</Balloon>
+    <CL Premium="1100" ScheduledPmts="60" PremiumMethod="gross" CoverageType="single" />
+</inREFUND>

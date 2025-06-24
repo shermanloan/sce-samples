@@ -1,0 +1,31 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "BusinessRules": {
+      "// " : "Specific rules that affect validity and presentations of", 
+      "//_" : "calculations are listed under the Business Rules object.",
+      "//-" : "In this example, perfect amortization is always required.",
+      "//!" : " The final payment is adjusted to ensure this outcome.",
+      "AmError": "AdjPmt"
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "10.000",
+        "AccrualCode": "320"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

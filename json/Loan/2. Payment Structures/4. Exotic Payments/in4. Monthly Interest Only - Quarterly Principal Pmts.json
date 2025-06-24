@@ -1,0 +1,36 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "PmtStreams": [
+      {
+        "// " : "First, establish the full term of the monthly interst paymets.",
+        "Date": "2019-02-01",
+        "PmtType": "PayInt",
+        "Term": "12"
+      },
+      {
+        "// " : "Quarterly Principal + Final Payoff - Quarterly principal", 
+        "//_" : "payments will be made, beginning in April. The SCE auto-", 
+        "//-" : "matically calculates the final payment to amortize the loan.",
+        "Date": "2019-04-01",
+        "PmtType": "PayInt",
+        "Amount": "100.00",
+        "Term": "4",
+        "PPY": "4"
+      }
+    ]
+  }
+}

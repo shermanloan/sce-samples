@@ -1,0 +1,48 @@
+{
+  "Module": "Loan",
+  "Data": {
+    "EditOutput": {
+      "ShowType": true,
+      "ShowFees": false
+    },
+    "Advances": [
+      {
+        "Date": "2019-01-01",
+        "Amount": "1000.00"
+      }
+    ],
+    "AccrualConfigs": [
+      {
+        "Date": "2019-01-01",
+        "IntRate": "5.000",
+        "AccrualCode": "304"
+      }
+    ],
+    "// " : "Service Charges - A Service Charge is a fee that's spread out over", 
+    "//_" : "a payment stream. This sample spreads a $50.00 fee over all the payments.",
+    "//-" : "Set the 'CalcType' to 'ServChg', the 'ServChgType' to 'ByTerm'", 
+    "//!" : "(divide the $50.00 service charge by the Term of the FEE) and", 
+    "//|" : "force all the fees to be equal (to ensure all the payments are equal).",
+    "//~" : "Notice the 'Date' has been set to the date of the first payment and", 
+    "//@" : "that the term of the fees is equal to the term of the PmtStream.",
+    "Fees": [
+      {
+        "Date": "2019-02-01",
+        "Name": "Service Charge",
+        "CalcType": "ServChg",
+        "ServChgType": "ByTerm",
+        "Amount": "50",
+        "AddToPrin": false,
+        "AddToFinChg": true,
+        "Term": "12",
+        "EqualServChg": true
+      }
+    ],
+    "PmtStreams": [
+      {
+        "Date": "2019-02-01",
+        "Term": "12"
+      }
+    ]
+  }
+}

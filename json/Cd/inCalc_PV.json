@@ -1,0 +1,12 @@
+{
+  "Module" : "Cd",
+  "Data" : {
+    "Calculate" : "PV",
+    "Date" : "2022-05-01",
+    "Rate" : "6.0",
+    "Term" : "12",
+    "TermUnits" : "Months",
+    "FV" : "424671.12",
+    "Compounding" : "Monthly"
+  }
+}
