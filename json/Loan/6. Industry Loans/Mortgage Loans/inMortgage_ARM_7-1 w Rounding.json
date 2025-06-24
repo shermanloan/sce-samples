@@ -1,0 +1,57 @@
+{
+  "//": "A 7/1 ARM means a teaser term of seven years with rates adjusting annually afterwards.",
+  "//_": "The fully indexed rate will be rounded down to the nearest 1/8'th of a percent.",
+  "Module" : "Loan",
+  "Data" : {
+    "//": "The loan amount. Fees are not included to simplify the lesson.",
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "300000"
+      }
+    ],
+    "//_": "AccrualConfig objects are always required with the Loan module.",
+    "//-": "The IntRate field gets overridden by the teaser rate but all other",
+    "//!": "attributes are kept. The zero rate emphasizes this point.",
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "0.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "//]": "ARM loan declaration.",
+    "ARM" : {
+      "//": "Discount term persists for 7 years.",
+      "Teaser" : {
+        "Rate" : "6.000",
+        "Term" : "72"
+      },
+      "//_": "Fully indexed rate definition. Notice the Index + Margin = 6.749,",
+      "//-": "which is just below 6.750. Since we are rounding down to the nearest",
+      "//>": "1/8'th of a percent, the fully indexed rate will be rounded to 6.625.",
+      "FullyIndexedRate" : {
+        "Index" : "4.749",
+        "Margin" : "2.0",
+        "RoundBasis" : "0.125",
+        "RoundMethod" : "down"
+      },
+      "//]": "Rate caps that limit volitility in the rate adjustments.",
+      "Limits" : {
+        "Floor" : "2.0",
+        "Ceiling" : "14.0",
+        "Annual" : "2.0",
+        "Lifetime" : "5.0"
+      }
+    },
+    "//)": "The foundation payments, all of which are of type CalcPmt by default.",
+    "//(": "The payment amounts will increase when the rate increases, unless the",
+    "//[": "ARM CalcType is set to Balloon.",
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ]
+  }
+}

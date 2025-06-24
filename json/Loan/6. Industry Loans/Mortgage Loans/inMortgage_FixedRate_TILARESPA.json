@@ -1,0 +1,26 @@
+{
+  "Module" : "Loan",
+  "Data" : {
+    "//": "Include the TILARESPA2015 field to surface compliance data.",
+    "TILARESPA2015" : true,
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "300000.00"
+      }
+    ],
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "5.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ]
+  }
+}

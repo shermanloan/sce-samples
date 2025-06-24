@@ -1,0 +1,45 @@
+{
+  "//": "Fixed Rate FHA Loan with 5% down payment.",
+  "Module" : "Loan",
+  "Data" : {
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "100000.00"
+      }
+    ],
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "5.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ],
+    "//": "Mortgage insurance declaration.",
+    "MI" : {
+      "Type" : "FHA",
+      "PropertyValue" : "100000",
+      "CashDown" : "5000",
+      "//": "Rate Expressed as a %/Year.",
+      "Rates" : [
+        {
+          "Rate" : "0.55"
+        }
+      ],
+      "//_": "1.75% of (Principal-UpFront) and financed.",
+      "UpFront" : {
+        "Units" : "Points",
+        "Paid" : "Financed",
+        "Value" : "1.75"
+      },
+      "//-": "Premiums are paid periodically (monthly) for the duration of the loan.",
+      "Periodic" : {}
+    }
+  }
+}

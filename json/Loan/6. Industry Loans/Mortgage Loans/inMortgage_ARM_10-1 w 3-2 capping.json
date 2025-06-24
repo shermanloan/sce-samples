@@ -1,0 +1,60 @@
+{
+  "//": "A 10/1 ARM means a teaser term of ten years with rates adjusting annually afterwards.",
+  "//_": "3/2 Capping means the post teaser rate (initial increase) will be capped at 3%,",
+  "//-": "rather than the normal 2% annual increase.",
+  "Module" : "Loan",
+  "Data" : {
+    "//": "The loan amount. Fees are not included to simplify the lesson.",
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "300000"
+      }
+    ],
+    "//_": "AccrualConfig objects are always required with the Loan module.",
+    "//-": "The IntRate field gets overridden by the teaser rate but all other",
+    "//!": "attributes are kept. The zero rate emphasizes this point.",
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "0.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "//]": "ARM loan declaration.",
+    "ARM" : {
+      "//": "Discount term persists for 10 years.",
+      "Teaser" : {
+        "Rate" : "3.500",
+        "Term" : "120"
+      },
+      "//-": "This object focuses on the adjustment to the rate immediately following the teaser term.",
+      "//>": "If the actual rate needs to be specified, not just an increase, use Type: Rate.",
+      "PostTeaser" : {
+        "Type" : "Increase",
+        "Rate" : "3.0"
+      },
+      "//_": "Fully indexed rate definition.",
+      "FullyIndexedRate" : {
+        "Index" : "4.0",
+        "Margin" : "2.75"
+      },
+      "//]": "Rate caps that limit volitility in the rate adjustments.",
+      "Limits" : {
+        "Floor" : "2.0",
+        "Ceiling" : "14.0",
+        "Annual" : "2.0",
+        "Lifetime" : "5.0"
+      }
+    },
+    "//)": "The foundation payments, all of which are of type CalcPmt by default.",
+    "//(": "The payment amounts will increase when the rate increases, unless the",
+    "//[": "ARM CalcType is set to Balloon.",
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ]
+  }
+}

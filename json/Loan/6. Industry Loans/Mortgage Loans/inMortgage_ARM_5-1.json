@@ -1,0 +1,53 @@
+{
+  "//": "A 5/1 ARM means a teaser term of five years with rates adjusting annually",
+  "//_":"following the teaser term.",
+  "Module" : "Loan",
+  "Data" : {
+    "//": "The loan amount. Fees are not included to simplify the lesson.",
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "300000"
+      }
+    ],
+    "//_": "AccrualConfig objects are always required with the Loan module.",
+    "//-": "The IntRate field gets overridden by the teaser rate but all other",
+    "//!": "attributes are kept. The zero rate emphasizes this point.",
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "0.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "//]": "ARM loan declaration.",
+    "ARM" : {
+      "//": "Teaser rate will override the AccrualConfig rate.",
+      "Teaser" : {
+        "Rate" : "6.500",
+        "Term" : "60"
+      },
+      "//-": "Fully indexed rate definition.",
+      "FullyIndexedRate" : {
+        "Index" : "4.0",
+        "Margin" : "2.75"
+      },
+      "//_": "Rate caps that limit volitility in the rate adjustments.",
+      "Limits" : {
+        "Floor" : "2.0",
+        "Ceiling" : "14.0",
+        "Annual" : "2.0",
+        "Lifetime" : "5.0"
+      }
+    },
+    "//)": "The foundation payments, all of which are of type CalcPmt by default.",
+    "//(": "The payment amounts will increase when the rate increases, unless the",
+    "//[": "ARM CalcType is set to Balloon.",
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "//": "Fixed Rate Mortgage with PMI Insurance .",
+  "Module" : "Loan",
+  "Data" : {
+    "Advances" : [
+      {
+        "Date" : "2025-01-01",
+        "Amount" : "240000.00"
+      }
+    ],
+    "AccrualConfigs" : [
+      {
+        "Date" : "2025-01-01",
+        "IntRate" : "5.000",
+        "AccrualCode" : "304"
+      }
+    ],
+    "PmtStreams" : [
+      {
+        "Date" : "2025-02-01",
+        "Term" : "360"
+      }
+    ],
+    "//": "Mortgage insurance declaration.",
+    "MI" : {
+      "LoanAmt" : "240000",
+      "PropertyValue" : "250000",
+      "//": "Rate Expressed as a $/$100/Year.",
+      "Rates" : [
+        {
+          "Rate" : "0.35"
+        }
+      ],
+      "//-": "3 Monthly premiums paid at closing, not financed.",
+      "UpFront" : {
+        "Units" : "Months",
+        "Paid" : "AtClosing",
+        "Value" : "3"
+      },
+      "//_": "Periodic (monthly) Premiums with warning at 80% LTV (Balance / Property Value) dropping coverate at 78% LTV.",
+      "Periodic" : {
+        "Term" : "360"
+      }
+    }
+  }
+}
